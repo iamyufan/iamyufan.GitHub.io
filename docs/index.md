@@ -17,32 +17,18 @@ Chair of SciEcon Innovate Accelerator | *SciEcon CIC*
 | [<i class="fa fa-phone" aria-hidden="true"></i>](tel:+86 13853189701)
 <!--  | [<i class="fa fa-id-badge" aria-hidden="true"></i>](https://duke.box.com/s/ao1ndowhdl30ahywccjpvxhx4kdcj8w2) -->
 
+<!-- ---
+
+## **What's New** -->
 
 ---
-
-<!-- ## **Bio**
-
-**Yufan (Bruce) Zhang** is a rising senior student at [Duke Kunshan University (DKU)](https://dukekunshan.edu.cn/), where he is pursuing in a degree in Data Science (BS). He is also one of the members of the E-Board, [SciEcon CIC](https://www.sciecon.org/), where he serves as the SciEcon Lab Incubator Program Co-Chair. He has a solid knowledge foundation of Data Science, Computer Science, and Blockchain Technology. He has great enthusiasm for applying computational strategies to generate innovation and advance society. 
-
-Yufan has participated in several interdisciplinary research projects on computer vision, computational biology, and blockchain-related topics like non-fungible token. 
-Supervised by Prof. Peng Sun he developed a novel GAN-based model for few-shot stylized multilingual font generation. 
-Supervised by [Prof. Huansheng Cao](https://scholars.duke.edu/person/Huansheng.Cao), Assistant Professor of Environmental Science, and Prof. Gaoyang Li, he proposed a novel Graph Neural Network (GNN) based model for predicting catalytic turnover numbers in Escherichia coli. 
-He is now working on a blockchain-related research project supervised by [Prof. Luyao Zhang](https://scholars.duke.edu/person/luyao.zhang) and [Prof. Xin Tong](https://xintong.ca/) on ethical issues in NFT design and marketplace. 
-
-Yufan has shown to be a powerful force in the workplace and research teams using his positive attitude, tireless energy and leadership ability to motivate the whole team towards achievement of a goal. He successfully hosted two SciEcon lab symposium program serving as the SciEcon Lab Incubator Program Co-Chair, where he orchestrated SciEcon research lab activities and guide students to move forward along the research journey. He has also been active in service involvement by providing support and engaging in school activities. He was selected to be Teaching Assistant for COMPSCI201 (Programming and Data Structures) and ECON101 (Economic Principles) courses at DKU. He also actively participate in public welfare affairs, where he used to serve as the Co-Chair of DKU Home (Kunshan High-Tech Zone) to help children on English learning.
-
-Yufan is a native of Jinan, China. Yufan enjoys photography, traveling, various genres of music, ultimate frisbee, and so much more. He is also passionate about the technology innovation, China-US relations, philosophy.
-
---- -->
-
+## <span style="color:#5189e6">**#**</span>**Bio**
+---
 
 **Yufan (Bruce) Zhang** is a rising senior student at [Duke Kunshan University (DKU)](https://dukekunshan.edu.cn/), where he is pursuing in a degree in Data Science (B.S.). 
 He is also a member of the Inaugural E-Board, [SciEcon CIC](https://www.sciecon.org/), where he serves as the Interim Chair of SciEcon Innovate Accelerator. 
 He has a solid knowledge foundation of **Data Science**, **Computer Science**, and **Blockchain Technology**. 
 He has great enthusiasm for applying computational strategies to generate innovation and advance society. 
-
----
-## <span style="color:#5189e6">**#**</span>**Bio**
 
 ---
 

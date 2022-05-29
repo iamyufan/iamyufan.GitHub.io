@@ -51,3 +51,11 @@ Some thoughts on the predicament Chinese soccer is in……
 Self-Inquiry essay, DKU ETHLDR 201
 
 ---
+
+### [How I Build yufanz.xyz 记录一下建站的过程](Blogs/Build.md)
+
+##### May 30, 2022
+
+从一个连HTML都不会的小白到建设[yufanz.xyz](https://yufanz.xyz)的全过程
+
+---

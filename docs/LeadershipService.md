@@ -6,7 +6,7 @@
 
 ##### Oct 2021 - Present
 
-> SciEcon Lab Incubator Program Co-Chair, SciEcon Inaugural Leadership
+> Chair of SciEcon Innovate Accelerator, SciEcon Inaugural E-Board
 
 - Deployed SciEcon NFT Research Lab websites on Inter Planetary File System (IPFS)
 - Orchestrated SciEcon NFT research lab activities, including weekly meetings and the SciEcon NFT Symposium program
