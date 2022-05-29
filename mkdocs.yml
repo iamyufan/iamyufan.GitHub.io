@@ -9,7 +9,7 @@ theme:
     primary: white
     accent: indigo
   logo: img/logos/logo6.png
-  favicon: img/logos/logo6.png
+  favicon: img/logos/logo8_en.png
 
   features:
     - navigation.tabs
@@ -39,6 +39,7 @@ markdown_extensions:
 
 nav:
   - 'Home': 'index.md'
+  # - 'About': 'About.md'
   - 'Research': 'Research.md'
   - 'Innovate': 'Innovate.md'
   - 'Leadership': 'LeadershipService.md'

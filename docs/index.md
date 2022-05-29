@@ -6,11 +6,11 @@
 
 Data Science | Undergraduate '23 | *Duke Kunshan University*
 
-Inaugural E-Board ｜ SciEcon Affiliates | *SciEcon CIC*
+Chair of SciEcon Innovate Accelerator | *SciEcon CIC*
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-[<i class="fa fa-envelope-o" aria-hidden="true"></i>](mailto:yz605@duke.edu)
+[<i class="fa fa-envelope" aria-hidden="true"></i>](mailto:yz605@duke.edu)
 | [<i class="fa fa-linkedin" aria-hidden="true"></i>](https://www.linkedin.com/in/helloyufan/)
 | [<i class="fa fa-twitter" aria-hidden="true"></i>](https://twitter.com/brucezbrucez)
 | [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/iambrucez)
@@ -37,7 +37,7 @@ Yufan is a native of Jinan, China. Yufan enjoys photography, traveling, various 
 
 
 **Yufan (Bruce) Zhang** is a rising senior student at [Duke Kunshan University (DKU)](https://dukekunshan.edu.cn/), where he is pursuing in a degree in Data Science (B.S.). 
-He is also a member of the Inaugural E-Board, [SciEcon CIC](https://www.sciecon.org/), where he serves as the SciEcon Lab Incubator Program Co-Chair. 
+He is also a member of the Inaugural E-Board, [SciEcon CIC](https://www.sciecon.org/), where he serves as the Interim Chair of SciEcon Innovate Accelerator. 
 He has a solid knowledge foundation of **Data Science**, **Computer Science**, and **Blockchain Technology**. 
 He has great enthusiasm for applying computational strategies to generate innovation and advance society. 
 
