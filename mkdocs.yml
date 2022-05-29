@@ -1,0 +1,75 @@
+site_name: Yufan Zhang
+theme:
+  name: material
+  language: en
+  # custom_dir: overrides
+  font: 
+    text: Roboto Mono
+  palette:
+    primary: white
+    accent: indigo
+  logo: img/logos/logo6.png
+  favicon: img/logos/logo6.png
+
+  features:
+    - navigation.tabs
+    - toc.integrate
+    - navigation.expand
+    - navigation.tabs.sticky
+    - navigation.sections
+
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to light mode
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - 'Home': 'index.md'
+  - 'Research': 'Research.md'
+  - 'Innovate': 'Innovate.md'
+  - 'Leadership': 'LeadershipService.md'
+  - 'Blogs': 'Blogs.md'
+  - 'CV': https://duke.box.com/v/yufanbrucezhang
+
+markdown_extensions:
+  - attr_list
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope-open
+      link: mailto:<yz605@duke.edu>
+      name: Email
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/helloyufan
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/brucezbrucez
+    - icon: fontawesome/brands/github
+      link: https://github.com/iambrucez
+
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 简体中文
+      link: /张宇凡/
+      lang: zh
+
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
