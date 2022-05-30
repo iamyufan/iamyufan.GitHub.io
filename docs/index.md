@@ -1,4 +1,4 @@
-# ** **
+# 
 
 [![YUFAN](./img/logos/logo8_en.png){: style="height:200px"}](index.md)
 
@@ -15,13 +15,28 @@ Chair of SciEcon Innovate Accelerator | *SciEcon CIC*
 | [<i class="fa fa-twitter" aria-hidden="true"></i>](https://twitter.com/brucezbrucez)
 | [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/iambrucez)
 | [<i class="fa fa-phone" aria-hidden="true"></i>](tel:+86 13853189701)
+
+---
+
+Hello World!
+
+I'm Yufan.
+
+I’m currently a rising senior student at Duke Kunshan University, pursuing in a degree of B.S. in Data Science. 
+
+I have great enthusiasm for disciplines ranging from Artificial Intelligence, Computer Science, Blockchain, and Media & Arts. 
+
+I also enjoy photography, traveling, various genres of music, ultimate frisbee and so much more.
+
+Enjoy your journey here at [**yufanz.xyz**](https://yufanz.xyz/)!
+
 <!--  | [<i class="fa fa-id-badge" aria-hidden="true"></i>](https://duke.box.com/s/ao1ndowhdl30ahywccjpvxhx4kdcj8w2) -->
 
 <!-- ---
 
 ## **What's New** -->
 
----
+<!-- ---
 ## <span style="color:#5189e6">**#**</span>**Bio**
 ---
 
@@ -63,7 +78,7 @@ He really enjoys sharing her new thoughts and reflections.
 
 *Click [here](Life.md) to read more about his Life.*
 
----
+--- -->
 
 <!-- ## **#Contact**
 
@@ -79,7 +94,7 @@ He really enjoys sharing her new thoughts and reflections.
 
 --- -->
 
-## <span style="color:#5189e6">**#**</span>**Education**
+<!-- ## <span style="color:#5189e6">**#**</span>**Education**
 
 ---
 
@@ -87,9 +102,9 @@ He really enjoys sharing her new thoughts and reflections.
 
 **Duke Kunshan University ([DKU](https://dukekunshan.edu.cn/))**
 
-Aug 2019 - May 2023
+> AUG 2019 - MAY 2023
 
-> B.S. in Data Science
+B.S. in Data Science
 
 ---
 
@@ -97,9 +112,9 @@ Aug 2019 - May 2023
 
 **Duke University ([Duke](https://duke.edu/))**
 
-Aug 2019 - May 2023
+> AUG 2019 - MAY 2023
 
-> B.S. in Interdisciplinary Studies (Data Science)
+B.S. in Interdisciplinary Studies (Data Science) -->
 
 <!-- **Shandong Jigang Senior High School**
 
@@ -119,9 +134,9 @@ Aug 2019 - May 2023
 
 > Primary school -->
 
----
+<!-- --- -->
 
-## <span style="color:#5189e6">**#**</span>**Skills**
+<!-- ## <span style="color:#5189e6">**#**</span>**Skills**
 
 > *Always Learning*
 
@@ -141,4 +156,4 @@ Aug 2019 - May 2023
 
 ⚙️ DevOps: *Linux, Git, Docker, ArgoCD*
 
-🧮 Mathematics Fundamentals: *Linear Algebra, Calculus, Statistics, Numerical Analysis*
+🧮 Mathematics Fundamentals: *Linear Algebra, Calculus, Statistics, Numerical Analysis* -->

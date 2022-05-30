@@ -1,12 +1,15 @@
-# Yufan Zhang
+# <span style="color:#5189e6">**#**</span>**Bio**
+
+[![YUFAN](../img/logos/logo8_en.png){: style="height:200px"}](../index.md)
+
+<!-- ## <span style="color:#5189e6">**#**</span>**Bio** -->
+
+---
 
 **Yufan (Bruce) Zhang** is a rising senior student at [Duke Kunshan University (DKU)](https://dukekunshan.edu.cn/), where he is pursuing in a degree in Data Science (B.S.). 
 He is also a member of the Inaugural E-Board, [SciEcon CIC](https://www.sciecon.org/), where he serves as the Interim Chair of SciEcon Innovate Accelerator. 
 He has a solid knowledge foundation of **Data Science**, **Computer Science**, and **Blockchain Technology**. 
 He has great enthusiasm for applying computational strategies to generate innovation and advance society. 
-
----
-## <span style="color:#5189e6">**#**</span>**Bio**
 
 ---
 
@@ -18,9 +21,9 @@ Supervised by [Prof. Huansheng Cao](https://scholars.duke.edu/person/Huansheng.C
 He is now working on a blockchain-related research project supervised by [Prof. Luyao Zhang](https://scholars.duke.edu/person/luyao.zhang) and [Prof. Xin Tong](https://xintong.ca/), on ethical issues in NFT design and marketplace. 
 He also does not waste any change to learn new skills, practice the newly-learning skills, and propose new ideas for exploratory research.
 
-*Click [here](Research.md) to read more about his research projects.*
+*Click [here](../Research.md) to read more about his research projects.*
 
-*Click [here](Innovate.md) to read more about his innovate projects.*
+*Click [here](../Innovate.md) to read more about his innovate projects.*
 
 ### **Leadership and Service**
 
@@ -30,7 +33,7 @@ He has also been active in service involvement by providing support and engaging
 He was selected to be Teaching Assistant for COMPSCI201 (Programming and Data Structures) and ECON101 (Economic Principles) courses at DKU.
 He also actively participates in public welfare affairs, where he used to serve as the Co-Chair of DKU Home (Kunshan High-Tech Zone) to help children with English learning.
 
-*Click [here](LeadershipService.md) to read more about his leadership and service experience.*
+*Click [here](../LeadershipService.md) to read more about his leadership and service experience.*
 
 ### **Life**
 
@@ -39,4 +42,6 @@ Yufan enjoys photography, traveling, various genres of music, ultimate frisbee, 
 He is also passionate about technology innovation, China-US relations, and philosophy.
 He really enjoys sharing her new thoughts and reflections.
 
-*Click [here](Life.md) to read more about his Life.*
+*Click [here](../Life.md) to read more about his Life.*
+
+---

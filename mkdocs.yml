@@ -40,7 +40,11 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - 'Home': 'index.md'
+  - 'Home': 
+    - 'index.md'
+    - '#Bio': 'Home/About.md'
+    - '#Education': 'Home/Education.md'
+    - '#Skills': 'Home/Skills.md'
   # - 'About': 'About.md'
   - 'Research': 
     - 'Research.md'
@@ -53,8 +57,8 @@ nav:
     - 'Innovate.md'
     - 'Projects':
       - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
-      - 'Using CycleGAN for Domain Transfer between MNIST and SVHN': 'Innovate/CycleGAN.md'
       - 'Heart Disease Detection Using Machine Learning': 'Innovate/HeartDisease.md'
+      - 'Using CycleGAN for Domain Transfer between MNIST and SVHN': 'Innovate/CycleGAN.md'
     - 'Articles':
       - 'Development Status and Future Trends of Emerging NFT Market': 'Innovate/DustinAMA.md'
       - 'A Glance into Generative Adversarial Network (GAN)': 'Innovate/GAN.md'
