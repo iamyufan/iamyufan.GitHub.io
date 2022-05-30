@@ -13,10 +13,12 @@ theme:
 
   features:
     - navigation.tabs
-    - toc.integrate
+    # - toc.integrate
     - navigation.expand
-    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
+    # - navigation.tabs.sticky
+    
 
   palette:
     - media: "(prefers-color-scheme: light)" 
@@ -40,10 +42,40 @@ markdown_extensions:
 nav:
   - 'Home': 'index.md'
   # - 'About': 'About.md'
-  - 'Research': 'Research.md'
-  - 'Innovate': 'Innovate.md'
-  - 'Leadership': 'LeadershipService.md'
-  - 'Blogs': 'Blogs.md'
+  - 'Research': 
+    - 'Research.md'
+    - 'Projects':
+      - 'Using AlphaFold and GNN to Predict Catalytic Efficiency': 'Research/AlphaFold.md'
+      - 'On Ethics of Ethereum NFT': 'Research/HCIBlockchain.md'
+      - 'MF-Net: Few-shot Multilingual Stylized Font Generation': 'Research/MFNet.md'
+
+  - 'Innovate': 
+    - 'Innovate.md'
+    - 'Projects':
+      - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
+      - 'Using CycleGAN for Domain Transfer between MNIST and SVHN': 'Innovate/CycleGAN.md'
+      - 'Heart Disease Detection Using Machine Learning': 'Innovate/HeartDisease.md'
+    - 'Articles':
+      - 'Development Status and Future Trends of Emerging NFT Market': 'Innovate/DustinAMA.md'
+      - 'A Glance into Generative Adversarial Network (GAN)': 'Innovate/GAN.md'
+      - 'NFT Marketplace: How to Choose the Right NFT Marketplace for Artists and Collectors': 'Innovate/NFTartists.md'
+      
+  - 'Leadership': 
+    # - 'LeadershipService.md'
+    - 'SciEcon CIC': 'Leadership/SciEconCIC.md'
+    - 'Duke Kunshan University': 'Leadership/DukeKunshan.md'
+
+  - 'Life':
+    - 'Life.md'
+    - 'Enjoy':
+      - 'Shutter Button: The First 10000 Photographs': 'Life/10000Photos.md'
+      - 'Graphic Design Portfolio': 'Life/GraphicDesign.md'
+    - 'Blog':
+      - 'Mac Apps for Productivity': 'Life/MacApps.md'
+      - 'What is Wrong with Football in China 中国足球?': 'Life/ChinaFootball.md'
+      - 'Involution 内卷: Reflection and Possible Exit Mechanism': 'Life/Involution.md'
+      - 'How I Build yufanz.xyz 记录一下建站的过程': 'Life/Build.md'
+  
   - 'CV': https://duke.box.com/v/yufanbrucezhang
 
 markdown_extensions:

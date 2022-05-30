@@ -1,8 +1,8 @@
 # Development Status and Future Trends of Emerging NFT Market
 
-> The SciEcon AMA interview with Dr. Dustin Becker
+> SciEcon AMA interview with Dr. Dustin Becker
 > 
-> Author: Yufan Zhang, Zichao Chen
+> Interviewers: Yufan Zhang, Zichao Chen
 > 
 > Interviewee: Dr. Dustin Becker
 

@@ -1,6 +1,6 @@
 # A Glance into Generative Adversarial Network
 
-![GAN](../img/innovate/I-GAN.jpg)
+<!-- ![GAN](../img/innovate/I-GAN.jpg) -->
 
 > Author: [Junkai Man](https://keon.im), Xinyu Tian, Yufan Zhang & Zesen Zhuang
 > 
@@ -8,6 +8,7 @@
 > 
 > December 2021, Duke Kunshan University
 
+![GAN](../img/innovate/I-GAN.jpg)
 
 ## 1 Goal
 

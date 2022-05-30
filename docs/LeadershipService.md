@@ -1,4 +1,4 @@
-# **Leadership & Services**
+# Leadership & Services
 
 ---
 
