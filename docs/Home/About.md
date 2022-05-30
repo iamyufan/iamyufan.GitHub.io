@@ -42,6 +42,6 @@ Yufan enjoys photography, traveling, various genres of music, ultimate frisbee, 
 He is also passionate about technology innovation, China-US relations, and philosophy.
 He really enjoys sharing her new thoughts and reflections.
 
-*Click [here](../Life.md) to read more about his Life.*
+*Click [here](../Life.md) to read more about his life.*
 
 ---

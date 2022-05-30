@@ -2,7 +2,7 @@
 
 [![YUFAN](../img/logos/logo8_en.png){: style="height:200px"}](../index.md)
 
-## <span style="color:#5189e6">**#**</span>**Education**
+<!-- ## <span style="color:#5189e6">**#**</span>**Education** -->
 
 ---
 

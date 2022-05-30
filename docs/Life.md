@@ -34,11 +34,11 @@ After 22 years since I was born in Jinan, China, I am …
 
 #### Places in China that I have visited
 
-![China](img/Life/china.jpg){: style="height:400px; border: 1px solid #ddd;""}
+![China](img/Life/china.jpg){: style="height:90%; border: 1px solid #ddd;""}
 
 #### Places in the world I have visited
 
-![World](img/Life/world.jpg){: style="height:400px; border: 1px solid #ddd;""}
+![World](img/Life/world.jpg){: style="height:90%; border: 1px solid #ddd;""}
 
 
 <!-- I enjoy 📷 photography, 🗺 traveling, 🎧 various genres of music, 🥏 ultimate frisbee and so much more. -->

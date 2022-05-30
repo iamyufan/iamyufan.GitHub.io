@@ -2,7 +2,7 @@
 
 ---
 
-### **#Projects**
+### <span style="color:#5189e6">**#**</span>**Projects**
 
 ---
 
@@ -36,7 +36,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 
 ---
 
-### **#Articles**
+### <span style="color:#5189e6">**#**</span>**Articles**
 
 ---
 
