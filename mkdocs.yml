@@ -11,6 +11,12 @@ theme:
   logo: img/logos/logo6.png
   favicon: img/logos/logo8_en.png
 
+  icon:
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      pytorch: fontawesome/brands/css3
+
   features:
     - navigation.tabs
     # - toc.integrate
@@ -45,6 +51,8 @@ nav:
     - '#Bio': 'Home/About.md'
     - '#Education': 'Home/Education.md'
     - '#Skills': 'Home/Skills.md'
+    - '#Tags': 'Home/tags.md'
+
     # - '#Contact': 'Home/Contact.md'
   # - 'About': 'About.md'
   - 'Research': 
@@ -84,6 +92,8 @@ nav:
   
   - 'CV': 'img/cv_yufan.pdf'
 
+  # - 'Tags': 'tags.md'
+
 markdown_extensions:
   - attr_list
 extra_css:
@@ -108,6 +118,17 @@ extra:
     - name: 简体中文
       link: /张宇凡/
       lang: zh
+
+  tags:
+    PyTorch: pytorch
+    ComputerVision: 'Computer Vision'
+    HTML: html
+
+plugins:
+  - search
+  - tags:
+      # tags_file: 'Home/Skills.md'
+      tags_file: 'Home/tags.md'
 
   # analytics:
   #   provider: google

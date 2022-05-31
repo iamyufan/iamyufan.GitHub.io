@@ -1,4 +1,6 @@
-# Leadership & Services
+# Leadership & Service
+
+<!-- [![YUFAN](./img/logos/en-Leadership.png){: style="width:200px"}](./LeadershipService.md) -->
 
 ---
 
@@ -39,7 +41,6 @@ Joined the COMPSCI 201 Teaching Team to serve as a TA
 > JAN
 
 ---
-
 ### **2020**
 
 [**Duke Kunshan University**](./Leadership/DukeKunshan.md)
@@ -53,6 +54,10 @@ Served as student assistant at Office of China Enrollment Management to provide 
 Served as the Co-Chair of DKU Home (Kunshan High-Tech Zone), DKU Home to organize volunteering activities at DKU Home.
 
 > FEB
+
+---
+
+### **2019**
 
 [**Duke Kunshan University**](./Leadership/DukeKunshan.md)
 

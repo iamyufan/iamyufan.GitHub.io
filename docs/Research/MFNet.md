@@ -1,3 +1,10 @@
+---
+tags:
+  - ComputerVision
+  - GAN
+  - PyTorch
+---
+
 # MF-Net: Few-shot Multilingual Stylized Font Generation
 
 ![MFNet](../img/research/R-MF-Net.jpg)

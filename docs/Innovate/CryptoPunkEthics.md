@@ -1,3 +1,9 @@
+---
+tags:
+  - Plotly
+  - NLP
+---
+
 # A Glance into NFT Ethics: On Ethics of CryptoPunk
 
 <!-- ![NFTEthics](../img/innovate/I-nftethics.png) -->

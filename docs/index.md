@@ -1,6 +1,6 @@
 # 
 
-[![YUFAN](./img/logos/logo8_en.png){: style="height:200px"}](index.md)
+[![YUFAN](./img/logos/logo8_en.png){: style="width:200px"}](index.md)
 
 **/BruceZ /张宇凡**
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Photography
+---
+
 # Shutter Button: The First 10000 Photographs
 
 > May 28, 2022
@@ -19,7 +24,8 @@
 
 ---
 
-![001](../img/Life/shutter/01.jpeg){: style="height:50%"; loading=lazy}
+![001](../img/Life/shutter/01.jpeg)
+<!-- {: style="height:50%"; loading=lazy} -->
 #### Blue: Sky and Sea 天蓝与海蓝
 
 <!-- <div style="width: 100%;">
@@ -41,7 +47,8 @@
 
 ---
 
-![002](../img/Life/shutter/02.jpg){: style="height:50%"; loading=lazy}
+![002](../img/Life/shutter/02.jpg)
+<!-- {: style="height:50%"; loading=lazy} -->
 #### Coffee or Orange 咖啡还是橘色
 
 > Shanghai, China
@@ -54,7 +61,8 @@
 
 ---
 
-![003](../img/Life/shutter/03.jpg){: style="height:50%"}
+![003](../img/Life/shutter/03.jpg)
+<!-- {: style="height:50%"} -->
 #### Busy Thriving 忙于成长
 
 > Kunshan, China
@@ -67,7 +75,8 @@
 
 ---
 
-![004](../img/Life/shutter/04.jpg){: style="height:50%"}
+![004](../img/Life/shutter/04.jpg)
+<!-- {: style="height:50%"} -->
 #### Sunset Glow 晚霞
 
 > Jinan, China
@@ -80,7 +89,8 @@
 
 ---
 
-![005](../img/Life/shutter/05.jpg){: style="height:50%"}
+![005](../img/Life/shutter/05.jpg)
+<!-- {: style="height:50%"} -->
 #### Nostalgia 那思叨记亚
 
 > Changshu, China
@@ -93,7 +103,8 @@
 
 ---
 
-![006](../img/Life/shutter/06.jpg){: style="height:50%"}
+![006](../img/Life/shutter/06.jpg)
+<!-- {: style="height:50%"} -->
 #### Fingers 五指
 
 > Shanghai, China
@@ -106,7 +117,8 @@
 
 ---
 
-![007](../img/Life/shutter/07.jpg){: style="height:50%"}
+![007](../img/Life/shutter/07.jpg)
+<!-- {: style="height:50%"} -->
 #### Sneakers, Leather Shoes, and Casual Shoes 运动鞋，皮鞋和休闲鞋
 
 > Shanghai, China
@@ -119,7 +131,8 @@
 
 ---
 
-![008](../img/Life/shutter/08.jpg){: style="height:50%"}
+![008](../img/Life/shutter/08.jpg)
+<!-- {: style="height:50%"} -->
 #### So-Called Happiness 所谓快乐
 
 > Kunshan, China
@@ -132,7 +145,8 @@
 
 ---
 
-![009](../img/Life/shutter/09.jpg){: style="height:50%"}
+![009](../img/Life/shutter/09.jpg)
+<!-- {: style="height:50%"} -->
 #### Ride in the Clouds 在云端骑行
 
 > Beijing, China
@@ -145,7 +159,8 @@
 
 ---
 
-![010](../img/Life/shutter/10.jpg){: style="height:50%"}
+![010](../img/Life/shutter/10.jpg)
+<!-- {: style="height:50%"} -->
 #### Cat 猫
 
 > Beijing, China
@@ -158,7 +173,8 @@
 
 ---
 
-![011](../img/Life/shutter/11.jpg){: style="height:50%"}
+![011](../img/Life/shutter/11.jpg)
+<!-- {: style="height:50%"} -->
 #### Bea Bea 天使
 
 > Shanghai, China
@@ -171,7 +187,8 @@
 
 ---
 
-![012](../img/Life/shutter/12.JPG){: style="height:50%"}
+![012](../img/Life/shutter/12.JPG)
+<!-- {: style="height:50%"} -->
 #### Subway Driver 地铁驾驶员
 
 > Shanghai, China
@@ -184,7 +201,8 @@
 
 ---
 
-![013](../img/Life/shutter/13.JPG){: style="height:50%"}
+![013](../img/Life/shutter/13.JPG)
+<!-- {: style="height:50%"} -->
 #### This is Wudu Shanghai 格zi雾都
 
 > Shanghai, China
@@ -197,7 +215,8 @@
 
 ---
 
-![014](../img/Life/shutter/14.JPG){: style="height:50%"}
+![014](../img/Life/shutter/14.JPG)
+<!-- {: style="height:50%"} -->
 #### Chineses Chess 象棋
 
 > Chengdu, China
@@ -210,7 +229,8 @@
 
 ---
 
-![015](../img/Life/shutter/15.jpg){: style="height:50%"}
+![015](../img/Life/shutter/15.jpg)
+<!-- {: style="height:50%"} -->
 #### Little Girl 小女孩
 
 > Chengdu, China
@@ -223,7 +243,8 @@
 
 ---
 
-![016](../img/Life/shutter/16.JPG){: style="height:50%"}
+![016](../img/Life/shutter/16.JPG)
+<!-- {: style="height:50%"} -->
 #### Cherry Blossoms 樱花
 
 > Nanjing, China
@@ -236,7 +257,8 @@
 
 ---
 
-![017](../img/Life/shutter/17.jpg){: style="height:50%"}
+![017](../img/Life/shutter/17.jpg)
+<!-- {: style="height:50%"} -->
 #### Selfie 自拍
 
 > Beijing, China
@@ -249,7 +271,8 @@
 
 ---
 
-![018](../img/Life/shutter/18.jpg){: style="height:50%"}
+![018](../img/Life/shutter/18.jpg)
+<!-- {: style="height:50%"} -->
 #### Nike Salesperson 耐克售货员
 
 > Shanghai, China
@@ -262,7 +285,8 @@
 
 ---
 
-![019](../img/Life/shutter/19.jpg){: style="height:50%"}
+![019](../img/Life/shutter/19.jpg)
+<!-- {: style="height:50%"} -->
 #### Dough Sculptor 捏面人
 
 > Shanghai, China
@@ -273,7 +297,8 @@
 
 ---
 
-![020](../img/Life/shutter/20.jpg){: style="height:50%"}
+![020](../img/Life/shutter/20.jpg)
+<!-- {: style="height:50%"} -->
 #### Dust 傍晚
 
 > Weihai, China

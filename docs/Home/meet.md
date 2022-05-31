@@ -1,4 +1,4 @@
-# Meet with me
+# Meet with Yufan
 
 ---
 
@@ -6,11 +6,15 @@
 
 ### **Zoom**
 
+[![ZOOM](../img/logos/zoom.svg){: style="height:50px"}](https://duke.zoom.us/j/5849284592)
+
 [<i class="fa fa-video-camera" aria-hidden="true"></i> Join my personal meeting room](https://duke.zoom.us/j/5849284592)
 
 ---
 
-### **Tencent Meeting**
+### **Tencent Meeting 腾讯会议**
+
+[![TENCENT](../img/logos/tencent.png){: style="height:50px"}](https://meeting.tencent.com/p/4732625174)
 
 [<i class="fa fa-video-camera" aria-hidden="true"></i> Join my personal meeting room](https://meeting.tencent.com/p/4732625174)
 

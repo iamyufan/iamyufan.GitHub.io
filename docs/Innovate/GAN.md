@@ -1,3 +1,9 @@
+---
+tags:
+    - GAN
+    - ComputerVision
+---
+
 # A Glance into Generative Adversarial Network
 
 <!-- ![GAN](../img/innovate/I-GAN.jpg) -->

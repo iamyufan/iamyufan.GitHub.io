@@ -1,3 +1,11 @@
+---
+tags:
+  - GNN
+  - Autoencoder
+  - PyTorch
+  - Linux
+---
+
 # Using AlphaFold and GNN to Predict Catalytic Efficiency
 
 ![AlphaFold](../img/research/R-AlphaFold.jpg)
