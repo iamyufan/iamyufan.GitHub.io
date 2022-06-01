@@ -3,7 +3,7 @@ tags:
   - Photography
 ---
 
-# Shutter Button: The First 10000 Photographs
+# Shutter Button: The First 10000 Photographs「按下快门」前10000张糟糕的摄影 
 
 > May 28, 2022
 > 
@@ -11,14 +11,16 @@ tags:
 
 ---
 
-在一次疫情期间的Media&Arts课程的期末作业中，我购置了一台Sony A6100，正式迈入了用相机记录瞬间的世界。
+从很小的时候，我就被「摄影」所吸引，常常被各类杂志、博客和社交媒体上的摄影作品所折服。但在上大学之前，我都未曾拥有过一台真正意义上的相机，更多的时间是用我的iPhone进行拍摄。2020疫情刚爆发时，被困在学校的我为了一个Media&Arts课程的期末作业，购置了一台Sony A6100，开始习惯于通过按下快门记录生活。
 
-法国摄影师Henri Cartier-Bresson说过这样一句话,
+在我眼里，「摄影」迷人的地方在于，有时候生活中的某个稍瞬即逝的场景，或会击中我的某处美学神经，又或是勾起我对于世界的感动，于是拿出相机把它拍下来。接着，对于照片的进一步加工，其实就是把打动我的部分放大，加强，把心中的美给实体化在一幅幅照片的过程。通过照片，别人才有了与我共同欣赏美景时的感动与共鸣。
+
+法国人文摄影家Henri Cartier-Bresson说过这样一句话,
 
 *Your first 10000 photographs are your worst.*
 *你的前 10000 张照片是你最糟糕的。*
 
-我写下这篇简短的Blog作为一个简陋的电子摄影集，来记录拿起相机的两年内用快门记录的瞬间。如果幸运的话，我希望这些照片是我最糟糕的照片。
+我写下这篇简短的Blog作为一个简陋的电子摄影集，来记录拿起相机的两年内用快门记录的瞬间。如果幸运的话，但愿这些照片是我最糟糕的照片。
 
 让我们开始吧。
 
@@ -251,7 +253,7 @@ tags:
 
 > Mar 2021
 
- SONY A6100 | 50mm F2.8 1/200
+> SONY A6100 | 50mm F2.8 1/200
 
 <!--  132mm ｜ F4 ｜ 1/160 -->
 
@@ -308,3 +310,59 @@ tags:
 > SONY A6100 | 75mm F2 1/250
 
 ---
+
+![021](../img/Life/shutter/21.jpg)
+<!-- {: style="height:50%"} -->
+#### Bridge 桥
+
+> Shanghai, China
+
+> Aug 2020
+
+> SONY A6100 | 50mm F2.8 1/1400
+
+---
+
+![022](../img/Life/shutter/22.jpg)
+<!-- {: style="height:50%"} -->
+#### Livehouse 演出
+
+> Beijing, China
+
+> Aug 2021
+
+> SONY A7C | 40mm F2.5 1/50
+
+---
+
+![023](../img/Life/shutter/23.jpg)
+<!-- {: style="height:50%"} -->
+#### Run on the Colors 在色彩上奔跑
+
+> Beijing, China
+
+> Aug 2021
+
+> SONY A7C | 136mm F6.3 1/250
+
+---
+
+![024](../img/Life/shutter/24.jpg)
+<!-- {: style="height:50%"} -->
+#### Sky and Grass 天空与草
+
+> Beijing, China
+
+> Aug 2021
+
+> SONY A7C | 75mm F5.6 1/1000
+
+---
+
+***Special Thanks To:***
+
+- 我的爸爸妈妈 for 一直支持我对于美感，摄影与艺术的探索
+
+- BlazeW for 和我一起在摄影的世界中探索和互相「批评」
+
+- DKU for 提供了许多了不起的媒体艺术课程
