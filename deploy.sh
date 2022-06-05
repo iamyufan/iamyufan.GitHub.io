@@ -12,9 +12,10 @@ rm -r img
 rm -r Home
 rm -r Research
 rm -r Innovate
-rm -r Leadership
+rm -r LeadershipService
+rm -r zh
 rm -r search
+rm -r tags
 rm -r stylesheets
-rm -r 张宇凡
 
 cp -r ./site/* ./

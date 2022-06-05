@@ -38,6 +38,16 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 
 ---
 
+[<p style="font-size:18px">**Evaluating Higher Education Using Machine Learning**</p>](Innovate/HigherEdu.md)
+
+> APR 2021
+
+[Meritotious Winner] MCM/ICM 2021 F Problem: A Machine Learning-Based Model for Evaluating Higher Education Quality
+
+[[Full Article](https://duke.box.com/s/9svihpzyktxcr4zssjnefx2v93ayna0q)]
+
+---
+
 ### <span style="color:#5189e6">**#**</span>**Articles**
 
 ---
@@ -52,7 +62,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 
 SciEcon AMA with Dr. Dustin Becker
 
-[[Medium Article](https://medium.com/sciecon-ama/development-status-and-future-trends-of-emerging-nft-market-a522ebc968ff)]
+[[Medium](https://medium.com/sciecon-ama/development-status-and-future-trends-of-emerging-nft-market-a522ebc968ff)]
 
 ---
 
@@ -77,6 +87,6 @@ Final Project, DKU STATS301 (Principles of Machine Learning)
 
 Exploratory Research on NFT Marketplace, SciEcon NFT Research Lab
 
-[[Medium Article](https://medium.com/sciecon-research/nft-marketplace-how-to-choose-the-right-nft-marketplace-for-artists-and-collectors-5d4cc7cb1918)]
+[[Medium](https://medium.com/sciecon-research/nft-marketplace-how-to-choose-the-right-nft-marketplace-for-artists-and-collectors-5d4cc7cb1918)]
 
 ---

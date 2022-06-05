@@ -2,7 +2,7 @@
 
 > SciEcon AMA interview with Dr. Dustin Becker
 > 
-> Interviewers: Yufan Zhang, Zichao Chen
+> Interviewers: Yufan Zhang & Zichao Chen
 > 
 > Interviewee: Dr. Dustin Becker
 

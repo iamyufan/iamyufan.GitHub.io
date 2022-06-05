@@ -2,7 +2,7 @@
 
 <!-- ![NFT](../img/innovate/I-NFT-Marketplace.jpg) -->
 
-> Author: Yufan Zhang, Zichao Chen
+> Author: Yufan Zhang & Zichao Chen
 
 > Nov 16, 2021
 

@@ -68,6 +68,7 @@ nav:
       - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
       - 'Heart Disease Detection Using Machine Learning': 'Innovate/HeartDisease.md'
       - 'Using CycleGAN for Domain Transfer between MNIST and SVHN': 'Innovate/CycleGAN.md'
+      - 'Evaluating Higher Education Using Machine Learning': 'Innovate/HigherEdu.md'
     - '#Articles':
       - 'Development Status and Future Trends of Emerging NFT Market': 'Innovate/DustinAMA.md'
       - 'A Glance into Generative Adversarial Network (GAN)': 'Innovate/GAN.md'
@@ -89,7 +90,8 @@ nav:
       - 'What is Wrong with Football in China 中国足球?': 'Life/ChinaFootball.md'
       - 'Involution 内卷: Reflection and Possible Exit Mechanism': 'Life/Involution.md'
       - 'How I Build yufanz.xyz 记录一下建站的过程': 'Life/Build.md'
-      - '自我解剖 Information for Personal Statement': 'Life/Reflecting.md'
+      - '自我解剖 Info for PS': 'Life/Reflecting.md'
+      - 'Graduate Programs': 'Life/GraduatePrograms.md'
   
   - 'CV': 'CV.pdf'
 
