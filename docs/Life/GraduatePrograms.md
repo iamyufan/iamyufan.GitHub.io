@@ -18,7 +18,7 @@
 
 1 Year (12 credits in the fall, 12 credits in the spring, and 6 credits in the fall)
 
-**Curriculum**:
+**Curriculum**
 
 - 3 courses in Computer Science
 - 1 course in Engineering
@@ -30,4 +30,21 @@
 ---
 
 ## [**New York University**](https://nyu.edu/)
+
+![nyu](../img/Life/Graduate/nyu.png)
+
+**Location** New York City, New York
+
+**U.S. News** #28
+
+**CSRankings (AI)** #23
+
+### [Master of Science in Data Science](https://cds.nyu.edu/masters-program/)
+
+**How Long**
+
+2 Years (26 credits: 9 credits/semester)
+
+**Curriculum**
+
 
