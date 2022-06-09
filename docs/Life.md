@@ -48,7 +48,15 @@ After 22 years since I was born in Jinan, China, I am …
 
 ### 🎶 A Music Addict
 
-What 🎶 music do I listen to?
+#### The albums I recently enjoy
+
+![C](img/Life/music/c.png){: style="height:90%; border: 1px solid #ddd;""}
+
+![E](img/Life/music/e.png){: style="height:90%; border: 1px solid #ddd;""}
+
+![JK](img/Life/music/jk.png){: style="height:90%; border: 1px solid #ddd;""}
+
+<!-- What 🎶 music do I listen to?
 
 > Chinese Hip-Hop, Pop Hip-Hop, Jazz Hip-Hop, R&B, K-Pop
 
@@ -78,7 +86,7 @@ Which one is the best K-Pop album?
 
 Who is the best 🎺 jazz Hip-Pop artist?
 
-> Nujabes
+> Nujabes -->
 
 ---
 

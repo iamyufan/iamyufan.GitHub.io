@@ -31,6 +31,14 @@ I also enjoy photography, traveling, various genres of music, ultimate frisbee a
 
 Enjoy your journey here at [**yufanz.xyz**](https://yufanz.xyz/)!
 
+---
+
+|
+[#Bio](Home/About.md) |
+[#Education](Home/Education.md) |
+[#Skills](Home/Skills.md) |
+[#Tags](Home/tags.md) |
+
 <!--  | [<i class="fa fa-id-badge" aria-hidden="true"></i>](https://duke.box.com/s/ao1ndowhdl30ahywccjpvxhx4kdcj8w2) -->
 
 <!-- ---
