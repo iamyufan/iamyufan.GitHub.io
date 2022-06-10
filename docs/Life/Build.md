@@ -25,7 +25,7 @@
 Fig 1 - The first homepage I built with Notion
 </p>
 
-## fleek + mkdocs 初次尝试
+## mkdocs + fleek.co 初次尝试
 
 21 年冬天，我和 SciEcon NFT Research Lab 中的其他同学成功举办 SciEcon NFT Symposium 之后，教授和我们决定将整个 Symposium 的介绍和各个同学文章的介绍做成一个网页，并部署到某个去中心化的平台上。
 经过一些筛选和 Zesen 的建议，我们最终选择了使用 [mkdocs](https://www.mkdocs.org/) 来制作网页，再通过 [fleek.co](https://fleek.co/) 将网页部署在 [IPFS](https://github.com/ipfs/ipfs) 上，是用于存储和访问文件、网站、应用程序和数据的分布式文件系统。
@@ -45,4 +45,6 @@ Fig 2 - The page for SciEcon NFT Symposium built with fleek + mkdocs
 
 ## Notion 再次尝试
 
-## fleek + mkdocs 目前网站
+## mkdocs + fleek.co 再次尝试
+
+## mkdocs + github.io
