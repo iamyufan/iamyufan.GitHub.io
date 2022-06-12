@@ -9,7 +9,7 @@ tags:
 
 > Author: Hao He, Yufan Zhang, Zefeng Bao, Yuanxi Zheng & Shuxin Guo
 > 
-> Insturctor: Prof. Shuhui Wang
+> Instructor: Prof. Shuhui Wang
 > 
 > Summer 2021, Institute of Computing Technology, Chinese Academy of Sciences
 

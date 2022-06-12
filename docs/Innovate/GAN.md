@@ -10,7 +10,7 @@ tags:
 
 > Author: [Junkai Man](https://keon.im), Xinyu Tian, Yufan Zhang & Zesen Zhuang
 > 
-> Insturctor: [Prof. Elchanan Solomon](https://elchanansolomon.com/)
+> Instructor: [Prof. Elchanan Solomon](https://elchanansolomon.com/)
 > 
 > December 2021, Duke Kunshan University
 

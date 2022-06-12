@@ -4,7 +4,7 @@
 
 ---
 
-### <span style="color:#5189e6">**#**</span>**Projects**
+## <span style="color:#5189e6">**#**</span>**Projects**
 
 ---
 
@@ -15,6 +15,16 @@
 Final Project, DKU STATS401 (Data Acquisition and Visualization)
 
 [[GitHub](https://github.com/iambrucez/STATS401-Project2)]
+
+---
+
+[<p style="font-size:18px">**Visualizing DKU’s Interdisciplinarity**</p>](Innovate/CryptoPunkEthics.md)
+
+> MAY 2022
+
+Project One, DKU STATS401 (Data Acquisition and Visualization)
+
+[[GitHub](https://github.com/iambrucez/STATS401-Project1)]
 
 ---
 
@@ -50,7 +60,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 
 ---
 
-### <span style="color:#5189e6">**#**</span>**Articles**
+## <span style="color:#5189e6">**#**</span>**Articles**
 
 ---
 

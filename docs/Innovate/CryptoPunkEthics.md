@@ -10,7 +10,7 @@ tags:
 
 > Author: Yufan Zhang, Zichao Chen
 > 
-> Insturctor: Prof. Xin Tong
+> Instructor: Prof. Xin Tong
 > 
 > Spring 2022, Duke Kunshan University
 

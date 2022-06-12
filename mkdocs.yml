@@ -66,6 +66,7 @@ nav:
     - 'Innovate.md'
     - '#Projects':
       - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
+      - "Visualizing DKU's Interdisciplinarity": 'Innovate/DKUInterdisciplinarity.md'
       - 'Heart Disease Detection Using Machine Learning': 'Innovate/HeartDisease.md'
       - 'Using CycleGAN for Domain Transfer between MNIST and SVHN': 'Innovate/CycleGAN.md'
       - 'Evaluating Higher Education Using Machine Learning': 'Innovate/HigherEdu.md'
