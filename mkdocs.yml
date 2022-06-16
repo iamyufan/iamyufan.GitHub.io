@@ -19,13 +19,13 @@ theme:
 
   features:
     - navigation.tabs
+    - navigation.top
     # - toc.integrate
     - navigation.expand
     - navigation.sections
     - navigation.indexes
     # - navigation.tabs.sticky
     
-
   palette:
     - media: "(prefers-color-scheme: light)" 
       primary: white
@@ -41,28 +41,39 @@ theme:
 
 markdown_extensions:
   - attr_list
+  - admonition
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_css:
+  - stylesheets/extra.css
 
 nav:
-  - 'Home': 
+  - Home: 
     - 'index.md'
     - '#Bio': 'Home/About.md'
     - '#Education': 'Home/Education.md'
     - '#Skills': 'Home/Skills.md'
     - '#Tags': 'Home/tags.md'
 
-    # - '#Contact': 'Home/Contact.md'
-  # - 'About': 'About.md'
-  - 'Research': 
-    - 'Research.md'
-    - 'Projects':
-      - 'Using AlphaFold and GNN to Predict Catalytic Efficiency': 'Research/AlphaFold.md'
-      - 'On Ethics of Ethereum NFT': 'Research/HCIBlockchain.md'
-      - 'MF-Net: Few-shot Multilingual Stylized Font Generation': 'Research/MFNet.md'
+  - Research: 
+    - Research/index.md
+    # - 'Projects':
+    - 'Using AlphaFold and GNN to Predict Catalytic Efficiency': 'Research/AlphaFold.md'
+    - 'On Ethics of Ethereum NFT': 'Research/HCIBlockchain.md'
+    - 'MF-Net: Few-shot Multilingual Stylized Font Generation': 'Research/MFNet.md'
 
-  - 'Innovate': 
+  - Innovate: 
     - 'Innovate.md'
     - '#Projects':
       - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
@@ -75,13 +86,13 @@ nav:
       - 'A Glance into Generative Adversarial Network (GAN)': 'Innovate/GAN.md'
       - 'NFT Marketplace: How to Choose the Right NFT Marketplace for Artists and Collectors': 'Innovate/NFTartists.md'
       
-  - 'Leadership': 
+  - Leadership: 
     - 'LeadershipService.md'
     - 'Institution':
       - 'SciEcon CIC': 'Leadership/SciEconCIC.md'
       - 'Duke Kunshan University': 'Leadership/DukeKunshan.md'
 
-  - 'Life':
+  - Life:
     - 'Life.md'
     - 'Enjoy':
       - 'Shutter Button: The First 10000 Photographs': 'Life/10000Photos.md'
@@ -94,14 +105,9 @@ nav:
       - '自我解剖 Info for PS': 'Life/Reflecting.md'
       - 'Graduate Programs': 'Life/GraduatePrograms.md'
   
-  - 'CV': 'CV.pdf'
+  - CV: 'CV.pdf'
 
   # - 'Tags': 'tags.md'
-
-markdown_extensions:
-  - attr_list
-extra_css:
-  - stylesheets/extra.css
 
 extra:
   social:

@@ -2,6 +2,10 @@
 
 # Duke Kunshan University
 
+---
+
+Duke Kunshan is a world-class liberal arts university based in Kunshan, China, that offers a range of high quality, innovative academic programs for students from around the world. It was established in September 2013 as a U.S.-China partnership between Duke University and Wuhan University.
+
 <!-- [![DKU](../img/logos/dku_ver.png){: style="height:80px"}](https://duke.edu/) -->
 
 ---

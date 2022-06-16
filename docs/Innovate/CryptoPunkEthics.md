@@ -8,7 +8,7 @@ tags:
 
 <!-- ![NFTEthics](../img/innovate/I-nftethics.png) -->
 
-> Author: Yufan Zhang, Zichao Chen
+> Authors: Yufan Zhang, Zichao Chen
 > 
 > Instructor: Prof. Xin Tong
 > 
@@ -54,6 +54,8 @@ A detailed introduction to the visualizations will be shown in the following par
 
 ### 3.1 Sankey Diagram
 
+![vis1](../img/innovate/DKUVis/vis1.png)
+
 The Sankey diagram visualizes the distribution of CryptoPunk with different attributes.
 
 - We categorized CryptoPunk attributes into 4 levels, Type, Gender, Skin Tone, and # of Accessories, and each column of the diagram represents one level respectively.
@@ -62,6 +64,8 @@ The Sankey diagram visualizes the distribution of CryptoPunk with different attr
 
 ### 3.2 Time River Chart
 
+![vis2](../img/innovate/DKUVis/vis2.jpg)
+
 Time river depicts the price changing of CryptoPunks with different attributes.
 
 - We chooses 8 categories of CryptoPunks, which from top to bottom are `[ 'Male_Albino', 'Male_Light','Male_Medium', 'Male_Dark','Female_Albino', 'Female_Light', 'Female_Medium', 'Female_Dark']`
@@ -69,6 +73,8 @@ Time river depicts the price changing of CryptoPunks with different attributes.
 - Users can click the labels above to select the categories to be shown.
 
 ### 3.3 Scatter Plot
+
+![vis3](../img/innovate/DKUVis/vis3.png)
 
 The scatter plot visualizes the CryptoPunks transactions in terms of the punk skin tone of each transaction.
 
@@ -79,6 +85,8 @@ The scatter plot visualizes the CryptoPunks transactions in terms of the punk sk
 
 ### 3.4 Circular Network
 
+![vis4](../img/innovate/DKUVis/vis4.png)
+
 The circular network visualizes the transaction network of CryptoPunk by year.
 
 - Each node refers to a trader who has participated in at least one transaction of CryptoPunk, and each edge refers to a transaction with the color representing the punk skin tone of the transaction.
@@ -87,6 +95,8 @@ The circular network visualizes the transaction network of CryptoPunk by year.
 - Users can click the legends on the top right to select which punk skin tone of the transactions to be shown.
 
 ### 3.5 Bar Chart & Word Cloud
+
+![vis5](../img/innovate/DKUVis/vis5.png)
 
 The visualization of the bar chart and WordCloud reflects the sentiments of Twitter users towards NFT ethics-related topics.
 

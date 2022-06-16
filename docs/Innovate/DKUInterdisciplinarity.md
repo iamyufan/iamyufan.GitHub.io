@@ -7,7 +7,7 @@ tags:
 
 # Visualizing DKU’s Interdisciplinarity
 
-> Author: Yufan Zhang, Junyi Tao & Ran Peng
+> Authors: Yufan Zhang, Junyi Tao & Ran Peng
 
 > Instructor: Prof. Xin Tong
 

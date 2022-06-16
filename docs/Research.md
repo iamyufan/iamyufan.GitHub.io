@@ -4,7 +4,16 @@
 
 ---
 
-<!-- ![AlphaFold](./img/research/R-AlphaFold.jpg){: style="height:200px"} -->
+<div style="display: flex;" markdown>
+<img src="https://raw.githubusercontent.com/SciEcon/publication-website/master/docs/assets/thumbnails/1.png" width="300" />
+<div style="width: 2%">
+</div>
+<div markdown style="width: 70%;">
+**Title**: How will DeFi Reshape the Future of Finance?
+
+**Medium Link**: <https://medium.com/sciecon-ama/how-will-defi-reshape-the-future-of-finance-a5febf668487>
+</div>
+</div>
 
 [<p style="font-size:18px">**Using AlphaFold and GNN to Predict Catalytic Efficiency**</p>](Research/AlphaFold.md)
 
