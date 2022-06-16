@@ -10,4 +10,6 @@ tags:
 
 > Instructor: Shixin Xu, Duke Kunshan University
 
-> MCM/ICM 2021
+> MCM/ICM 2021 [Meritotious Winner]
+
+![HigherEdu](../Innovate/img/I-HigherEdu.jpg)

@@ -2,8 +2,6 @@
 
 [![YUFAN](../img/logos/logo8_en.png){: style="height:200px"}](../index.md)
 
-<!-- ## <span style="color:#5189e6">**#**</span>**Bio** -->
-
 ---
 
 **Yufan (Bruce) Zhang** is a rising senior student at [Duke Kunshan University (DKU)](https://dukekunshan.edu.cn/), where he is pursuing in a degree in Data Science (B.S.). 
@@ -33,7 +31,7 @@ He has also been active in service involvement by providing support and engaging
 He was selected to be Teaching Assistant for COMPSCI201 (Programming and Data Structures) and ECON101 (Economic Principles) courses at DKU.
 He also actively participates in public welfare affairs, where he used to serve as the Co-Chair of DKU Home (Kunshan High-Tech Zone) to help children with English learning.
 
-*Click [here](../LeadershipService.md) to read more about his leadership and service experience.*
+*Click [here](../Leadership/index.md) to read more about his leadership and service experience.*
 
 ### **Life**
 
@@ -42,6 +40,6 @@ Yufan enjoys photography, traveling, various genres of music, ultimate frisbee, 
 He is also passionate about technology innovation, China-US relations, and philosophy.
 He really enjoys sharing her new thoughts and reflections.
 
-*Click [here](../Life.md) to read more about his life.*
+*Click [here](../Life/index.md) to read more about his life.*
 
 ---

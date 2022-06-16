@@ -1,5 +1,4 @@
 rm -r ./site
-
 rm 404.html
 rm index.html
 rm sitemap.xml

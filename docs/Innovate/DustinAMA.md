@@ -6,6 +6,8 @@
 > 
 > Interviewee: Dr. Dustin Becker
 
+![DustinAMA](../Innovate/img/I-DustinAMA.jpg)
+
 ---
 
 ## About Dr. Dustin Becker:

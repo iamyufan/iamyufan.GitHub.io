@@ -11,3 +11,5 @@ tags:
 > Instructor: [Prof. Elchanan Solomon](https://elchanansolomon.com/)
 
 > November 2021, Duke Kunshan University
+
+![Heart](../Innovate/img/I-Heart.jpg)

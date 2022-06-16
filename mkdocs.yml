@@ -3,8 +3,8 @@ theme:
   name: material
   language: en
   # custom_dir: overrides
-  font: 
-    text: Roboto Mono
+  # font: 
+  #   text: Roboto Slab #Roboto Mono
   palette:
     primary: white
     accent: indigo
@@ -20,7 +20,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    - toc.integrate
+    # - toc.integrate
     - navigation.expand
     - navigation.sections
     - navigation.indexes
@@ -70,8 +70,8 @@ nav:
     - Research/index.md
     # - 'Projects':
     - 'Using AlphaFold and GNN to Predict Catalytic Efficiency': 'Research/AlphaFold.md'
-    - 'On Ethics of Ethereum NFT': 'Research/HCIBlockchain.md'
     - 'MF-Net: Few-shot Multilingual Stylized Font Generation': 'Research/MFNet.md'
+    - 'On Ethics of Ethereum NFT': 'Research/HCIBlockchain.md'
 
   - Innovate: 
     - Innovate/index.md
@@ -87,13 +87,13 @@ nav:
       - 'NFT Marketplace: How to Choose the Right NFT Marketplace for Artists and Collectors': 'Innovate/NFTartists.md'
       
   - Leadership: 
-    - 'LeadershipService.md'
+    - Leadership/index.md
     - 'Institution':
       - 'SciEcon CIC': 'Leadership/SciEconCIC.md'
       - 'Duke Kunshan University': 'Leadership/DukeKunshan.md'
 
   - Life:
-    - 'Life.md'
+    - Life/index.md
     - 'Enjoy':
       - 'Shutter Button: The First 10000 Photographs': 'Life/10000Photos.md'
       - 'Graphic Design Portfolio': 'Life/GraphicDesign.md'
@@ -129,10 +129,10 @@ extra:
       link: 'zh/Home'
       lang: zh
 
-  tags:
-    PyTorch: pytorch
-    ComputerVision: 'Computer Vision'
-    HTML: html
+  # tags:
+  #   PyTorch: pytorch
+  #   ComputerVision: 'Computer Vision'
+  #   HTML: html
 
 plugins:
   - search

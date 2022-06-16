@@ -2,12 +2,12 @@
 
 ---
 
-## <span style="color:#5189e6">**#**</span>**Projects**
+### <span style="color:#5189e6">**#**</span>**Projects**
 
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-CryptoPunk.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-CryptoPunk.jpg" width="300" />](CryptoPunkEthics.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -24,7 +24,7 @@ Project II, DKU STATS401 (Data Acquisition and Visualization)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-DKUVis.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-DKUVis.jpg" width="300" />](DKUInterdisciplinarity.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -41,7 +41,7 @@ Project I, DKU STATS401 (Data Acquisition and Visualization)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-CycleGAN.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-CycleGAN.jpg" width="300" />](CycleGAN.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -58,7 +58,7 @@ Reimplementation of CycleGAN on MNIST and SVHN datasets
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-Heart.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-Heart.jpg" width="300" />](HeartDisease.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -75,7 +75,7 @@ Midterm Project, DKU STATS302
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-HigherEdu.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-HigherEdu.jpg" width="300" />](HigherEdu.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -91,12 +91,12 @@ Midterm Project, DKU STATS302
 
 ---
 
-## <span style="color:#5189e6">**#**</span>**Articles**
+### <span style="color:#5189e6">**#**</span>**Articles**
 
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-DustinAMA.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-DustinAMA.jpg" width="300" />](DustinAMA.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -113,7 +113,7 @@ SciEcon AMA with Dr. Dustin Becker
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-GAN.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-GAN.jpg" width="300" />](GAN.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -130,7 +130,7 @@ Final Project, DKU STATS301 (Principles of Machine Learning)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-NFT-Marketplace.jpg" width="300" />
+[<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-NFT-Marketplace.jpg" width="300" />](NFTartists.md)
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">

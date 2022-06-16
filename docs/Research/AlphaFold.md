@@ -14,7 +14,8 @@ tags:
 >
 > Instructors: Prof. Huansheng Cao, Prof. Gaoyang Li
 >
-> Members: Yufan Zhang, Yang Yu, Yiyang Sun, Jinxuan Zhang, Zixu Geng, and Yihe Li
+> Members: Yufan Zhang, Yang Yu, Yiyang Sun, Jinxuan Zhang & Zixu Geng
+
+![AlphaFold](../Research/img/R-AlphaFold.jpg)
 
 ## Roadmap
-

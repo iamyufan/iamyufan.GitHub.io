@@ -19,5 +19,5 @@ GitHub: [iambrucez](https://github.com/iambrucez)
 [<i class="fa fa-phone" aria-hidden="true"></i>](tel:+86 13853189701)
 Tel: [+86 13853189701](tel:+86 13853189701)
 
-[<i class="fa fa-video-camera" aria-hidden="true"></i>](./meet.md)
-Meet: [Meet with me](./meet.md)
+[<i class="fa fa-video-camera" aria-hidden="true"></i>](../meet.md)
+Meet: [Meet with me](../meet.md)
