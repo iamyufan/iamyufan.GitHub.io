@@ -3,7 +3,7 @@
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/research/R-AlphaFold.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Research/img/R-AlphaFold.jpg" width="300"/>
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -20,7 +20,7 @@ Supervised by [Prof. Huansheng Cao](https://scholars.duke.edu/person/Huansheng.C
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/research/R-MF-Net.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Research/img/R-MF-Net.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -37,7 +37,7 @@ Co-authored with [Junkai Man](https://keon.im/) and [Prof. Peng Sun](https://sch
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/research/R-HCI-Blockchain.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Research/img/R-HCI-Blockchain.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">

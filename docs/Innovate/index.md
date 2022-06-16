@@ -7,7 +7,7 @@
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-CryptoPunk.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-CryptoPunk.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -24,7 +24,7 @@ Project II, DKU STATS401 (Data Acquisition and Visualization)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-DKUVIs.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-DKUVis.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -41,7 +41,7 @@ Project I, DKU STATS401 (Data Acquisition and Visualization)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-CycleGAN.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-CycleGAN.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -49,7 +49,7 @@ Project I, DKU STATS401 (Data Acquisition and Visualization)
 
 > AUG 2021
 
-Exploratory re-implementation of CycleGAN to achieve on domain transfer between MNIST and SVHN datasets
+Reimplementation of CycleGAN on MNIST and SVHN datasets
 
 [[Slides](https://duke.box.com/s/c0tlgdkd0kx61r4oiexe97lysgthymiv)]
 </div>
@@ -58,7 +58,7 @@ Exploratory re-implementation of CycleGAN to achieve on domain transfer between 
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-Heart.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-Heart.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -66,7 +66,7 @@ Exploratory re-implementation of CycleGAN to achieve on domain transfer between 
 
 > NOV 2021
 
-DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Modeling
+Midterm Project, DKU STATS302
 
 [[Deepnote](https://deepnote.com/workspace/STATS302-4f09fc73-c297-4e81-9ee0-e516a39469c4/project/Midterm-602eae71-1f27-4efb-bea4-6bf5ca8dcc4a/%2Fdataset_README.ipynb)]
 </div>
@@ -75,7 +75,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-HigherEdu.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-HigherEdu.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -83,7 +83,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 
 > APR 2021
 
-[Meritotious Winner] MCM/ICM 2021 F Problem: A Machine Learning-Based Model for Evaluating Higher Education Quality
+[Meritotious Winner] MCM/ICM 2021 F Problem
 
 [[Full Article](https://duke.box.com/s/9svihpzyktxcr4zssjnefx2v93ayna0q)]
 </div>
@@ -96,7 +96,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-DustinAMA.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-DustinAMA.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">

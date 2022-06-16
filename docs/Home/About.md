@@ -21,9 +21,9 @@ Supervised by [Prof. Huansheng Cao](https://scholars.duke.edu/person/Huansheng.C
 He is now working on a blockchain-related research project supervised by [Prof. Luyao Zhang](https://scholars.duke.edu/person/luyao.zhang) and [Prof. Xin Tong](https://xintong.ca/), on ethical issues in NFT design and marketplace. 
 He also does not waste any change to learn new skills, practice the newly-learning skills, and propose new ideas for exploratory research.
 
-*Click [here](../Research.md) to read more about his research projects.*
+*Click [here](../Research/index.md) to read more about his research projects.*
 
-*Click [here](../Innovate.md) to read more about his innovate projects.*
+*Click [here](../Innovate/index.md) to read more about his innovate projects.*
 
 ### **Leadership and Service**
 

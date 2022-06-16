@@ -6,7 +6,7 @@ tags:
 
 # A Glance into Generative Adversarial Network
 
-<!-- ![GAN](../img/innovate/I-GAN.jpg) -->
+<!-- ![GAN](../Innovate/img/I-GAN.jpg) -->
 
 > Author: [Junkai Man](https://keon.im), Xinyu Tian, Yufan Zhang & Zesen Zhuang
 > 
@@ -14,7 +14,7 @@ tags:
 > 
 > December 2021, Duke Kunshan University
 
-![GAN](../img/innovate/I-GAN.jpg)
+![GAN](../Innovate/img/I-GAN.jpg)
 
 ## 1 Goal
 
@@ -30,7 +30,7 @@ The GAN falls in the framework of Generative Model. It is in the contrast to the
 
 Mathematically, discriminative model tries to learn the conditional probability distribution of p(Y |X) where Y denotes the labels and X denotes the predictor. But generative model tries to learn the joint probability of p(X, Y ) with the help of Bayes Theorem. For the unsupervised learning tasks where there’s no labels Y , it directly learns the probability distribution of p(X).
 
-Before the GAN, there was already a family of generative models including ``Fully Visible Belief Network'' \cite{frey_hinton_dayan_1995}, ``Boltzmann Machines'' \cite{hinton2007boltzmann}, and ``Variational Autoencoders'' \cite{kingma_welling_2013}. What motivated the author to innovate the GAN was that these models usually involved the Markov Chain which has a higher computational cost and does not perform well in high dimensional spaces \cite{goodfellow2016nips}. The GAN shows its efficiency via the adversarial approach as described below.
+Before the GAN, there was already a family of generative models including ``Fully Visible Belief Network'' \cite{frey_hinton_dayan_1995}, ``Boltzmann Machines'' \cite{hinton2007boltzmann}, and ``Variational Autoencoders'' \cite{kingma_welling_2013}. What motivated the author to Innovate the GAN was that these models usually involved the Markov Chain which has a higher computational cost and does not perform well in high dimensional spaces \cite{goodfellow2016nips}. The GAN shows its efficiency via the adversarial approach as described below.
 
 ### 1.3 Adversarial Approach
 

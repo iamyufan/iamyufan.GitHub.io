@@ -1,6 +1,6 @@
 # NFT Marketplace: How to Choose the Right NFT Marketplace for Artists and Collectors
 
-<!-- ![NFT](../img/innovate/I-NFT-Marketplace.jpg) -->
+<!-- ![NFT](../Innovate/img/I-NFT-Marketplace.jpg) -->
 
 > Author: Yufan Zhang & Zichao Chen
 
@@ -8,7 +8,7 @@
 
 > SciEcon NFT Research Lab
 
-![NFT](../img/innovate/I-NFT-Marketplace.jpg)
+![NFT](../Innovate/img/I-NFT-Marketplace.jpg)
 
 ## **Introduction**
 

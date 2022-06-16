@@ -6,15 +6,13 @@ tags:
 
 # A Glance into NFT Ethics: On Ethics of CryptoPunk
 
-<!-- ![NFTEthics](../img/innovate/I-nftethics.png) -->
-
 > Authors: Yufan Zhang, Zichao Chen
 > 
 > Instructor: Prof. Xin Tong
 > 
 > Spring 2022, Duke Kunshan University
 
-![NFTEthics](../img/innovate/I-nftethics.png)
+![NFTEthics](../Innovate/img/I-CryptoPunk.jpg)
 
 ---
 
@@ -54,7 +52,7 @@ A detailed introduction to the visualizations will be shown in the following par
 
 ### 3.1 Sankey Diagram
 
-![vis1](../img/innovate/DKUVis/vis1.png)
+![vis1](../Innovate/img/DKUVis/vis1.png)
 
 The Sankey diagram visualizes the distribution of CryptoPunk with different attributes.
 
@@ -64,7 +62,7 @@ The Sankey diagram visualizes the distribution of CryptoPunk with different attr
 
 ### 3.2 Time River Chart
 
-![vis2](../img/innovate/DKUVis/vis2.jpg)
+![vis2](../Innovate/img/DKUVis/vis2.jpg)
 
 Time river depicts the price changing of CryptoPunks with different attributes.
 
@@ -74,7 +72,7 @@ Time river depicts the price changing of CryptoPunks with different attributes.
 
 ### 3.3 Scatter Plot
 
-![vis3](../img/innovate/DKUVis/vis3.png)
+![vis3](../Innovate/img/DKUVis/vis3.png)
 
 The scatter plot visualizes the CryptoPunks transactions in terms of the punk skin tone of each transaction.
 
@@ -85,7 +83,7 @@ The scatter plot visualizes the CryptoPunks transactions in terms of the punk sk
 
 ### 3.4 Circular Network
 
-![vis4](../img/innovate/DKUVis/vis4.png)
+![vis4](../Innovate/img/DKUVis/vis4.png)
 
 The circular network visualizes the transaction network of CryptoPunk by year.
 
@@ -96,7 +94,7 @@ The circular network visualizes the transaction network of CryptoPunk by year.
 
 ### 3.5 Bar Chart & Word Cloud
 
-![vis5](../img/innovate/DKUVis/vis5.png)
+![vis5](../Innovate/img/DKUVis/vis5.png)
 
 The visualization of the bar chart and WordCloud reflects the sentiments of Twitter users towards NFT ethics-related topics.
 

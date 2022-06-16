@@ -1315,14 +1315,14 @@
 
 
 <h1 id="a-glance-into-generative-adversarial-network">A Glance into Generative Adversarial Network</h1>
-<!-- ![GAN](../img/innovate/I-GAN.jpg) -->
+<!-- ![GAN](../Innovate/img/I-GAN.jpg) -->
 
 <blockquote>
 <p>Author: <a href="https://keon.im">Junkai Man</a>, Xinyu Tian, Yufan Zhang &amp; Zesen Zhuang</p>
 <p>Instructor: <a href="https://elchanansolomon.com/">Prof. Elchanan Solomon</a></p>
 <p>December 2021, Duke Kunshan University</p>
 </blockquote>
-<p><img alt="GAN" src="../img/innovate/I-GAN.jpg" /></p>
+<p><img alt="GAN" src="../img/I-GAN.jpg" /></p>
 <h2 id="1-goal">1 Goal</h2>
 <h3 id="11-introduction">1.1 Introduction</h3>
 <p>Initially proposed by Ian J. Goodfellow and his colleagues in 2014, Generative Adversarial Network (GAN) is judged as one of the most interesting ideas in Machine Learning in recent years. It described an innovative unsupervised learning method that can generate highly indistinguishable statistics as the original dataset by making two networks contesting with each other.</p>
@@ -1330,7 +1330,7 @@
 <h3 id="12-generative-and-discriminative-model">1.2 Generative and Discriminative Model</h3>
 <p>The GAN falls in the framework of Generative Model. It is in the contrast to the concept of “Discrim- inative Model” which focuses on choosing the decision boundary between data, while the “Generative Model” intends to describe the probability distribution of a dataset. This makes generative models harder to be trained. For example, discriminative model can directly draw one hyperplane in the data space to divide two clusters but the generative model has to generate the probability distribution throughout the whole data space.</p>
 <p>Mathematically, discriminative model tries to learn the conditional probability distribution of p(Y |X) where Y denotes the labels and X denotes the predictor. But generative model tries to learn the joint probability of p(X, Y ) with the help of Bayes Theorem. For the unsupervised learning tasks where there’s no labels Y , it directly learns the probability distribution of p(X).</p>
-<p>Before the GAN, there was already a family of generative models including <code>Fully Visible Belief Network'' \cite{frey_hinton_dayan_1995},</code>Boltzmann Machines'' \cite{hinton2007boltzmann}, and ``Variational Autoencoders'' \cite{kingma_welling_2013}. What motivated the author to innovate the GAN was that these models usually involved the Markov Chain which has a higher computational cost and does not perform well in high dimensional spaces \cite{goodfellow2016nips}. The GAN shows its efficiency via the adversarial approach as described below.</p>
+<p>Before the GAN, there was already a family of generative models including <code>Fully Visible Belief Network'' \cite{frey_hinton_dayan_1995},</code>Boltzmann Machines'' \cite{hinton2007boltzmann}, and ``Variational Autoencoders'' \cite{kingma_welling_2013}. What motivated the author to Innovate the GAN was that these models usually involved the Markov Chain which has a higher computational cost and does not perform well in high dimensional spaces \cite{goodfellow2016nips}. The GAN shows its efficiency via the adversarial approach as described below.</p>
 <h3 id="13-adversarial-approach">1.3 Adversarial Approach</h3>
 <p>The adversarial approach is the highlight of the GAN and is taking inspiration from the Game Theory. The GAN acts like a ``Zero-sum Non-cooperative Game''. It describes a Minimax Game where two competitors are trying to maximize their own interest and minimizing the other's interest by all means. And through this process, GAN parallelly trains two neural networks to compete and finally the model will learn to generate results which are hard to distinguish whether real or fake. This is especially powerful when dealing with image and audio data, and it also shows a good result in practice.</p>
 <h2 id="2-model">2 Model</h2>

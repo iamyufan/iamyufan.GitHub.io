@@ -13,4 +13,4 @@ tags:
 > 
 > Summer 2021, Institute of Computing Technology, Chinese Academy of Sciences
 
-![CycleGAN](../img/innovate/CycleGAN.png)
+![CycleGAN](../Innovate/img/I-CycleGAN.jpg)

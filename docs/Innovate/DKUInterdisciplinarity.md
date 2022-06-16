@@ -15,6 +15,8 @@ tags:
 
 ---
 
+![DKUVis](../Innovate/img/I-DKUVis.jpg)
+
 ## 1. Introduction
 
 ### Background and Research Questions
@@ -75,25 +77,25 @@ This section contains five **visualization idioms**, including bubble charts, tr
 
 ### 3.1 Course disciplines
 
-![vis1](../img/innovate/DKUVis/1.jpg)
+![vis1](../Innovate/img/DKUVis/1.jpg)
 
 This visualization describes the disciplines distribution in DKU using a bubble chart. Its function is to show the distribution of the required courses in each major by size and color. Disciplines with the most courses are HIST and MEDIART, followed by POLSCI and PUBPOL.
 
 ### 3.2 Major-track required courses' disciplines
 
-![vis2](../img/innovate/DKUVis/2.jpg)
+![vis2](../Innovate/img/DKUVis/2.jpg)
 
 In this visualization, we aim to display the distribution of DKU majors by a treemap. This type of visualization performs well when many components match the different tracks in majors. Various sizes and colors indicate the number of tracks in one major and its courses. Within each sector, overall credits and track descriptions are displayed in turn. Hoving over the blocks we can see the major-track name and course counts.
 
 ### 3.3 Faculty departments/Divisions
 
-![vis3](../img/innovate/DKUVis/3.jpg)
+![vis3](../Innovate/img/DKUVis/3.jpg)
 
 This treemap visualizes faculty departments and divisions (Social Science, Natural Science, Arts and Humanities). The aim is to display the grouped and nested departments in a hierarchical structure. The sizes and color shades show that Natural Science has the most faculty and research areas included. The most fundamental discipline (department) in each division is math, media & arts, and global China studies and economic, which is different from the course disciplines and major-track distribution (Vis 1 & 2).
 
 ### 3.4 Course topic modeling
 
-![vis4](../img/innovate/DKUVis/4.jpg)
+![vis4](../Innovate/img/DKUVis/4.jpg)
 
 We perform the topic modeling to identify seven topics in DKU and all courses' descriptions using pyLDAvis (Sievert and Shirley, 2014). This machine learning model creates the clusters of the words from the dataset, allowing us to find the hidden patterns embedded in the texts. This visualization is interactive (the HTML file is zipped), and here we analyze topic four as an example.
 
@@ -103,7 +105,7 @@ On the left side, each bubble represents a topic, where the larger the bubble, t
 
 ### 3.5 Faculty research specialties topic modeling
 
-![vis5](../img/innovate/DKUVis/5.jpg)
+![vis5](../Innovate/img/DKUVis/5.jpg)
 
 Similarly, we conducted topic modeling on DKU faculty publication titles. The topic keywords are shown in the table, though we cannot understand the topics by simply looking at them. This might be because only those whose publication data is posted on Duke Scholar are included, so the corpus is too small and biased. 
 
