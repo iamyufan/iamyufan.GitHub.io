@@ -20,5 +20,4 @@ rm CV.pdf
 rm CV_zh.pdf
 
 mkdocs build
-
 cp -r ./site/* ./

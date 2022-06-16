@@ -7,7 +7,7 @@
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-CryptoPunk.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -24,7 +24,7 @@ Project II, DKU STATS401 (Data Acquisition and Visualization)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-DKUVIs.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -41,7 +41,7 @@ Project I, DKU STATS401 (Data Acquisition and Visualization)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-CycleGAN.png" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -58,7 +58,7 @@ Exploratory re-implementation of CycleGAN to achieve on domain transfer between 
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-Heart.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -75,7 +75,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-HigherEdu.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -96,7 +96,7 @@ DKU STATS301 Midterm Project: Machine Learning, One-Hot Encoding, Resemble Model
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-DustinAMA.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -113,7 +113,7 @@ SciEcon AMA with Dr. Dustin Becker
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-GAN.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -130,7 +130,7 @@ Final Project, DKU STATS301 (Principles of Machine Learning)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-nftethics.png" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-NFT-Marketplace.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
