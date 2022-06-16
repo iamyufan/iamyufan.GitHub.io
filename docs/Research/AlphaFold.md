@@ -8,8 +8,6 @@ tags:
 
 # Using AlphaFold and GNN to Predict Catalytic Efficiency
 
-![AlphaFold](../img/research/R-AlphaFold.jpg)
-
 > Aug 2021 - Present
 >
 > AlphaFold Research Group, DKU

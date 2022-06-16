@@ -20,11 +20,11 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    # - toc.integrate
+    - toc.integrate
     - navigation.expand
     - navigation.sections
     - navigation.indexes
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     
   palette:
     - media: "(prefers-color-scheme: light)" 
@@ -74,7 +74,7 @@ nav:
     - 'MF-Net: Few-shot Multilingual Stylized Font Generation': 'Research/MFNet.md'
 
   - Innovate: 
-    - 'Innovate.md'
+    - Innovate/index.md
     - '#Projects':
       - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
       - "Visualizing DKU's Interdisciplinarity": 'Innovate/DKUInterdisciplinarity.md'

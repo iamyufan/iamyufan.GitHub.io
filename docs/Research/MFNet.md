@@ -7,10 +7,8 @@ tags:
 
 # MF-Net: Few-shot Multilingual Stylized Font Generation
 
-![MFNet](../img/research/R-MF-Net.jpg)
+> Author: Yufan Zhang, [Junkai Man](https://keon.im/), [Peng Sun](https://scholars.duke.edu/person/Peng.Sun1)
 
-> Author: Yufan Zhang, [Junkai Man](https://keon.im/)
-> 
-> Insturctor: Prof. Peng Sun
-> 
+> Submitted to ACM Multimedia 2022
+
 > Spring 2022, Duke Kunshan University
