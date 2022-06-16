@@ -113,7 +113,7 @@ SciEcon AMA with Dr. Dustin Becker
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-GAN.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-GAN.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
@@ -130,7 +130,7 @@ Final Project, DKU STATS301 (Principles of Machine Learning)
 ---
 
 <div style="display: flex;" markdown>
-<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/img/innovate/I-NFT-Marketplace.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-NFT-Marketplace.jpg" width="300" />
 <div style="width: 2%">
 </div>
 <div markdown style="width: 70%;">
