@@ -16,6 +16,8 @@ tags:
 
 ---
 
+[[GitHub](https://github.com/iambrucez/STATS401-Project2)]
+
 ## 1. Introduction - ‘What-Why-How’
 
 This project is trying to take a glance into ethical concerns in the Non-Fungible Token (NFT) market. We want to explore the distribution of attributes and prices on CryptoPunk, one of the most popular NFT projects around the world, via 5 data visualizations. Then, we will use the “What-Why-How” framework to further introduce our project.

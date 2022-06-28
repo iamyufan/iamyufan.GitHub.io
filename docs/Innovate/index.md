@@ -8,8 +8,7 @@
 
 <div style="display: flex;" markdown>
 [<img src="https://raw.githubusercontent.com/iambrucez/iambrucez.GitHub.io/master/docs/Innovate/img/I-CryptoPunk.jpg" width="300" />](CryptoPunkEthics.md)
-<div style="width: 2%">
-</div>
+<div style="width: 2%"></div>
 <div markdown style="width: 70%;">
 [<p style="font-size:18px">A Glance into NFT Ethics: On Ethics of CryptoPunk</p>](CryptoPunkEthics.md)
 
@@ -17,7 +16,7 @@
 
 Project II, DKU STATS401 (Data Acquisition and Visualization)
 
-[[GitHub](https://github.com/iambrucez/STATS401-Project2)]
+<!-- [[GitHub](https://github.com/iambrucez/STATS401-Project2)] -->
 </div>
 </div>
 
@@ -34,7 +33,7 @@ Project II, DKU STATS401 (Data Acquisition and Visualization)
 
 Project I, DKU STATS401 (Data Acquisition and Visualization)
 
-[[GitHub](https://github.com/iambrucez/STATS401-Project1)]
+<!-- [[GitHub](https://github.com/iambrucez/STATS401-Project1)] -->
 </div>
 </div>
 
@@ -51,7 +50,7 @@ Project I, DKU STATS401 (Data Acquisition and Visualization)
 
 Reimplementation of CycleGAN on MNIST and SVHN datasets
 
-[[Slides](https://duke.box.com/s/c0tlgdkd0kx61r4oiexe97lysgthymiv)]
+<!-- [[Slides](https://duke.box.com/s/c0tlgdkd0kx61r4oiexe97lysgthymiv)] -->
 </div>
 </div>
 
@@ -68,7 +67,7 @@ Reimplementation of CycleGAN on MNIST and SVHN datasets
 
 Midterm Project, DKU STATS302
 
-[[Deepnote](https://deepnote.com/workspace/STATS302-4f09fc73-c297-4e81-9ee0-e516a39469c4/project/Midterm-602eae71-1f27-4efb-bea4-6bf5ca8dcc4a/%2Fdataset_README.ipynb)]
+<!-- [[Deepnote](https://deepnote.com/workspace/STATS302-4f09fc73-c297-4e81-9ee0-e516a39469c4/project/Midterm-602eae71-1f27-4efb-bea4-6bf5ca8dcc4a/%2Fdataset_README.ipynb)] -->
 </div>
 </div>
 
@@ -85,7 +84,7 @@ Midterm Project, DKU STATS302
 
 [Meritotious Winner] MCM/ICM 2021 F Problem
 
-[[Full Article](https://duke.box.com/s/9svihpzyktxcr4zssjnefx2v93ayna0q)]
+<!-- [[Full Article](https://duke.box.com/s/9svihpzyktxcr4zssjnefx2v93ayna0q)] -->
 </div>
 </div>
 
@@ -106,7 +105,7 @@ Midterm Project, DKU STATS302
 
 SciEcon AMA with Dr. Dustin Becker
 
-[[Medium](https://medium.com/sciecon-ama/development-status-and-future-trends-of-emerging-nft-market-a522ebc968ff)]
+<!-- [[Medium](https://medium.com/sciecon-ama/development-status-and-future-trends-of-emerging-nft-market-a522ebc968ff)] -->
 </div>
 </div>
 
@@ -123,7 +122,7 @@ SciEcon AMA with Dr. Dustin Becker
 
 Final Project, DKU STATS301 (Principles of Machine Learning)
 
-[[Full Report](https://duke.box.com/s/cisp8axg59eyxn48qabl0mfx9i85bmxh)]
+<!-- [[Full Report](https://duke.box.com/s/cisp8axg59eyxn48qabl0mfx9i85bmxh)] -->
 </div>
 </div>
 
@@ -140,7 +139,7 @@ Final Project, DKU STATS301 (Principles of Machine Learning)
 
 Exploratory Research on NFT Marketplace, SciEcon NFT Research Lab
 
-[[Medium](https://medium.com/sciecon-research/nft-marketplace-how-to-choose-the-right-nft-marketplace-for-artists-and-collectors-5d4cc7cb1918)]
+<!-- [[Medium](https://medium.com/sciecon-research/nft-marketplace-how-to-choose-the-right-nft-marketplace-for-artists-and-collectors-5d4cc7cb1918)] -->
 </div>
 </div>
 

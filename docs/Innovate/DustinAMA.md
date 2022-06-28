@@ -8,6 +8,9 @@
 
 ![DustinAMA](../Innovate/img/I-DustinAMA.jpg)
 
+[[Medium](https://medium.com/sciecon-ama/development-status-and-future-trends-of-emerging-nft-market-a522ebc968ff)]
+
+
 ---
 
 ## About Dr. Dustin Becker:

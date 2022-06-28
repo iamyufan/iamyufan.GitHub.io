@@ -16,6 +16,9 @@ tags:
 
 ![GAN](../Innovate/img/I-GAN.jpg)
 
+[[Full Report](https://duke.box.com/s/cisp8axg59eyxn48qabl0mfx9i85bmxh)]
+
+
 ## 1 Goal
 
 ### 1.1 Introduction

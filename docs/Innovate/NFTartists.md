@@ -10,6 +10,9 @@
 
 ![NFT](../Innovate/img/I-NFT-Marketplace.jpg)
 
+[[Medium](https://medium.com/sciecon-research/nft-marketplace-how-to-choose-the-right-nft-marketplace-for-artists-and-collectors-5d4cc7cb1918)]
+
+
 ## **Introduction**
 
 In the article *NFT Marketplace: Introduction to NFT and NFT Marketplace’s Mechanism*, we have given you the primary mechanism of NFT and the specialized NFT marketplaces. NFTs (Non-Fungible Tokens), records on a blockchain that represents pieces of digital media, have become extremely popular this year. NFT marketplaces around the world play a vital role in the trading and liquidity of NFTs. This article introduces what to consider when choosing an NFT marketplace for listing and buying NFTs for your purpose. The currently existing NFT marketplaces worldwide often provide several different features and are built for distinct usage scenarios. Therefore, depending on the position in the NFT marketplace, you need to consider some things when choosing an NFT marketplace.

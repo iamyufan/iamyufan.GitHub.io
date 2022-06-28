@@ -3,8 +3,9 @@ theme:
   name: material
   language: en
   # custom_dir: overrides
-  # font: 
-  #   text: Roboto Slab #Roboto Mono
+  font: 
+    text: #Roboto Mono #PT Sans #Playfair Display #Raleway #Roboto Slab #Roboto Mono
+
   palette:
     primary: white
     accent: indigo
@@ -20,7 +21,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    # - toc.integrate
+    - toc.integrate
     - navigation.expand
     - navigation.sections
     - navigation.indexes
@@ -61,36 +62,45 @@ extra_css:
 nav:
   - Home: 
     - 'index.md'
-    - '#Bio': 'Home/About.md'
-    - '#Education': 'Home/Education.md'
-    - '#Skills': 'Home/Skills.md'
+    - '#Bio': 'Home/bio.md'
+    - '#Education': 'Home/education.md'
+    - '#Skills': 'Home/skills.md'
     - '#Tags': 'Home/tags.md'
 
-  - Research: 
-    - Research/index.md
-    # - 'Projects':
-    - 'Using AlphaFold and GNN to Predict Catalytic Efficiency': 'Research/AlphaFold.md'
-    - 'MF-Net: Few-shot Multilingual Stylized Font Generation': 'Research/MFNet.md'
-    - 'On Ethics of Ethereum NFT': 'Research/HCIBlockchain.md'
+  - Projects: 
+    - Projects/index.md
+    - '#Research':
+      - "AlphaFold and GNN": 'Projects/AlphaFold.md'
+      - "MF-Net": 'Projects/MFNet.md'
+      - "Visualizing NFT Ethics": 'Projects/NFTEthics.md'
+    - '#Innovate':
+      - "Visualizing DKU's Interdisciplinarity": 'Projects/DKUInterdisciplinarity.md'
+      - "Heart Disease Detection Using Machine Learning": 'Projects/HeartDisease.md'
+      - "Using CycleGAN for Domain Transfer between MNIST and SVHN": 'Projects/CycleGAN.md'
+      - "Evaluating Higher Education Using Machine Learning": 'Projects/HigherEdu.md'
+    # - '#Articles':
+    #   - 'Development Status and Future Trends of Emerging NFT Market': 'Innovate/DustinAMA.md'
+    #   - 'A Glance into Generative Adversarial Network (GAN)': 'Innovate/GAN.md'
+    #   - 'NFT Marketplace: How to Choose the Right NFT Marketplace for Artists and Collectors': 'Innovate/NFTartists.md'
 
-  - Innovate: 
-    - Innovate/index.md
-    - '#Projects':
-      - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
-      - "Visualizing DKU's Interdisciplinarity": 'Innovate/DKUInterdisciplinarity.md'
-      - 'Heart Disease Detection Using Machine Learning': 'Innovate/HeartDisease.md'
-      - 'Using CycleGAN for Domain Transfer between MNIST and SVHN': 'Innovate/CycleGAN.md'
-      - 'Evaluating Higher Education Using Machine Learning': 'Innovate/HigherEdu.md'
-    - '#Articles':
-      - 'Development Status and Future Trends of Emerging NFT Market': 'Innovate/DustinAMA.md'
-      - 'A Glance into Generative Adversarial Network (GAN)': 'Innovate/GAN.md'
-      - 'NFT Marketplace: How to Choose the Right NFT Marketplace for Artists and Collectors': 'Innovate/NFTartists.md'
+  # - Innovate: 
+  #   - Innovate/index.md
+  #   - '#Projects':
+  #     - 'A Glance into NFT Ethics': 'Innovate/CryptoPunkEthics.md'
+  #     - "Visualizing DKU's Interdisciplinarity": 'Innovate/DKUInterdisciplinarity.md'
+  #     - 'Heart Disease Detection Using Machine Learning': 'Innovate/HeartDisease.md'
+  #     - 'Using CycleGAN for Domain Transfer between MNIST and SVHN': 'Innovate/CycleGAN.md'
+  #     - 'Evaluating Higher Education Using Machine Learning': 'Innovate/HigherEdu.md'
+  #   - '#Articles':
+  #     - 'Development Status and Future Trends of Emerging NFT Market': 'Innovate/DustinAMA.md'
+  #     - 'A Glance into Generative Adversarial Network (GAN)': 'Innovate/GAN.md'
+  #     - 'NFT Marketplace: How to Choose the Right NFT Marketplace for Artists and Collectors': 'Innovate/NFTartists.md'
       
-  - Leadership: 
-    - Leadership/index.md
+  - Experience: 
+    - Experience/index.md
     - 'Institution':
-      - 'SciEcon CIC': 'Leadership/SciEconCIC.md'
-      - 'Duke Kunshan University': 'Leadership/DukeKunshan.md'
+      - 'SciEcon CIC': 'Experience/SciEconCIC.md'
+      - 'Duke Kunshan University': 'Experience/DukeKunshan.md'
 
   - Life:
     - Life/index.md

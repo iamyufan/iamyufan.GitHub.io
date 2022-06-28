@@ -6,20 +6,29 @@
 
 ---
 
-[![DKU](../img/logos/dku_ver.png){: style="height:80px"}](https://dukekunshan.edu.cn/)
+[![DKU](../img/logos/dku_ver.png){: style="height:80px; border: 1px solid #ddd;""}](https://dukekunshan.edu.cn/)
+[![Duke](../img/logos/dukesquare_blue.png){: style="height:80px; border: 1px solid #ddd;""}](https://duke.edu/)
 
 **Duke Kunshan University ([DKU](https://dukekunshan.edu.cn/))**
 
-> AUG 2019 - MAY 2023
+**Duke University ([Duke](https://duke.edu/))**
 
-B.S. in Data Science
+Dual Degree Undergraduate Program
 
----
+<!-- **Duke Kunshan University ([DKU](https://dukekunshan.edu.cn/))** -->
+
+> Aug 2019 - May 2023
+
+B.S. in Data Science (by DKU)
+
+B.S. in Interdisciplinary Studies (Data Science, by Duke) 
+
+<!-- ---
 
 [![Duke](../img/logos/dukesquare_blue.png){: style="height:80px"}](https://duke.edu/)
 
 **Duke University ([Duke](https://duke.edu/))**
 
-> AUG 2019 - MAY 2023
+> Aug 2019 - May 2023
 
-B.S. in Interdisciplinary Studies (Data Science)
+B.S. in Interdisciplinary Studies (Data Science) -->
