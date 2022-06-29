@@ -11,7 +11,7 @@ img {
 
 <div markdown style="width: 70%;">
 <p style="font-size:20px;">
-<img src="img/logos/logo8_en.png" alt="Pineapple" style="width:200px">
+<!-- <img src="img/logos/logo8_en.png" alt="Pineapple" style="width:200px"> -->
 <!-- Hello World 👋  -->
 <!-- <br />
 <br /> -->

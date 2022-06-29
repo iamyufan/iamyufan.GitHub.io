@@ -7,14 +7,14 @@ rm -r assets
 rm -r Life
 rm -r img
 rm -r Home
-rm -r Research
+rm -r Projects
 rm -r Innovate
-rm -r LeadershipService
-rm -r Leadership
+rm -r Experience
 rm -r zh
 rm -r search
 rm -r tags
 rm -r stylesheets
+rm -r meet
 rm CV.pdf
 rm CV_zh.pdf
 
