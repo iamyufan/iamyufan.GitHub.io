@@ -25,5 +25,14 @@
       <description>Investigated CryptoPunks to explore and visualize its potential ethical issues.</description>
     </item>
     
+    <item>
+      <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
+      <link>http://yufanz.xyz/project/alphafold/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/alphafold/</guid>
+      <description>Using AlphaFold and GNN to Predict Catalytic Efficiency</description>
+    </item>
+    
   </channel>
 </rss>
