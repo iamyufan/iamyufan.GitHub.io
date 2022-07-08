@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PyTorch on Yufan Zhang</title>
+    <link>http://yufanz.xyz/tags/pytorch/</link>
+    <description>Recent content in PyTorch on Yufan Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MF-Net: A Noval Stylized Multilingual Font Generation Method</title>
+      <link>http://yufanz.xyz/project/mfnet/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/mfnet/</guid>
+      <description>Develop a GAN-based model to achieve fast few-shot font style transfer between unseen languages</description>
+    </item>
+    
+  </channel>
+</rss>
