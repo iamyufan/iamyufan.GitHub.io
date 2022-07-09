@@ -1,2 +1,5 @@
-# iambrucez.GitHub.io
-Source code for yufanz.xyz
+# yufanz.xyz
+
+Source code for my website
+
+Built with Hugo and PaperMod
