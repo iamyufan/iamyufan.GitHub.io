@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Modeling on Yufan Zhang</title>
+    <link>http://yufanz.xyz/tags/modeling/</link>
+    <description>Recent content in Modeling on Yufan Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evaluating Higher Education Using Machine Learning</title>
+      <link>http://yufanz.xyz/project/higheredu/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/higheredu/</guid>
+      <description>Authors: Qinwanxian Liu, Chenyu Wang, Yufan Zhang
+Meritotious Winner for MCM/ICM 2022
+PDF | Certificate
+Abstract Higher education is a core component of a sustainable society. It has gained significant momentum worldwide over the last three decades. To fairly evaluate the quality and sustainability of the existing higher education system in different countries, we constructed a Back-Propagation neuro network model. We assess seven representative countries.
+In the first part, we carefully selected indices including enrollment ratio, Gender Parity Index, the number of Nobel prizes in different countries.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MF-Net: A Noval Stylized Multilingual Font Generation Method</title>
+      <title>MF-Net: A Novel Stylized Multilingual Font Generation Method</title>
       <link>http://yufanz.xyz/project/mfnet/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
@@ -19,7 +19,7 @@
     <item>
       <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
       <link>http://yufanz.xyz/project/alphafold/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/alphafold/</guid>
       <description>Utilize the output of AlphaFold as the enzyme feature to predict catalytic efficiency with GNN</description>

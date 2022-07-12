@@ -55,7 +55,7 @@
     <item>
       <title>Bio</title>
       <link>http://yufanz.xyz/tags/bio/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/tags/bio/</guid>
       <description></description>
@@ -64,9 +64,18 @@
     <item>
       <title>GNN</title>
       <link>http://yufanz.xyz/tags/gnn/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/tags/gnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blockchain</title>
+      <link>http://yufanz.xyz/tags/blockchain/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/tags/blockchain/</guid>
       <description></description>
     </item>
     
@@ -76,6 +85,33 @@
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>http://yufanz.xyz/tags/machine-learning/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MATLAB</title>
+      <link>http://yufanz.xyz/tags/matlab/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/tags/matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling</title>
+      <link>http://yufanz.xyz/tags/modeling/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/tags/modeling/</guid>
       <description></description>
     </item>
     

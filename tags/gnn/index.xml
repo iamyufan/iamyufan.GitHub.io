@@ -6,11 +6,11 @@
     <description>Recent content in GNN on Yufan Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/gnn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/gnn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
       <link>http://yufanz.xyz/project/alphafold/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/alphafold/</guid>
       <description>Utilize the output of AlphaFold as the enzyme feature to predict catalytic efficiency with GNN</description>
