@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Blockchain Network Analysis: A Comparative Studies of Decentralized Banks</title>
+      <link>http://yufanz.xyz/project/bns/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/bns/</guid>
+      <description>Use social network analysis to investigate the decentralization of popular DeFi protocols.</description>
+    </item>
+    
+    <item>
       <title>备考二十天 不保证靠谱的 GRE 分手指南</title>
       <link>http://yufanz.xyz/blog/gre/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
@@ -22,7 +31,7 @@
 关于单词 App: 墨墨背单词
 战线一定不能拉太长！战线一定不能拉太长！战线一定不能拉太长！
 就如我在前面所说的，我其实从大一开始就有意识地开始背诵 GRE 的单词，但断断续续的学习状态一点也没有帮助到我。我个人的经验是找出考试前一个半到两个月的时间集中背单词，每天背诵新词至少 100 个，听上去不多，但在每天背 100 个新单词的同时，还要复习大约 400-500 个以前学过的单词，这就意味着每天的单词背诵量达到了 500-600 个，以我的经验来说，这将消耗每天差不多两个小时的时间。
-显而易见，这个过程是非常枯燥且折磨的，尤其是初期和后期，前者的挑战是遇到一个词就不会一个词，往往要花费更多的时间；后者是快要接近考试，但每天复习旧词时仍然没有全都认识，会产生焦虑。我的经验是「摆烂」：不要妄想着当天就要背锅每一个没见过的新词，这是几乎不可能的，就把不认识的单词留给明天的自己吧。过了三四天，你会发现前几天完全没见过的单词也开始有了大概的印象，再过几天，竟然可以成功背下，我猜这也是得益于如今无数个App对于记忆曲线的研究。
+显而易见，这个过程是非常枯燥且折磨的，尤其是初期和后期，前者的挑战是遇到一个词就不会一个词，往往要花费更多的时间；后者是快要接近考试，但每天复习旧词时仍然没有全都认识，会产生焦虑。我的经验是「摆烂」：不要妄想着当天就要背过每一个没见过的新词，这是几乎不可能的，就把不认识的单词留给明天的自己吧。过了三四天，会发现前几天完全没见过的单词也开始有了大概的印象，再过几天，竟然可以成功背下，我猜这也是得益于如今无数个App对于记忆曲线的研究。
 另一个经验是，当我背过差不多 1300-1500 左右的单词时，再往下背，会发现记忆一个新词的难度大概率会下降，因为你背过的单词加上你从小到大学过的单词，给足了你英语中常见单词词根的意思，根据词根推断新词的大概意思、动/名/形容词也不再是个难事。
 再来聊聊背单词的 App，我在大一大二一直在用的KMF的「GRE3000词」App，该 App 的记忆模式是出现一个单词的同时显示四个意思的备选项，这就导致我很自然地会去看可能的选项，进而通过词性、大概的词义来选出正确选项。因此，看似背诵过了很多单词，但大部分时候，如果仅仅给我单词的英文，我是不会想到准确的中文释义的。相比较之下，「墨墨背单词」是指出现单词的英文，要求用户自己选择「认识」「模糊」「忘记」，显然，这种需要我们直接根据英文记起中文的背诵方式更有益于我们的记忆。
 可以 2-3 个好友一起使用「墨墨背单词」中的组队学习功能，一起打卡，在互相督促的同时也可以一起吐槽App中对某些单词的助记。
@@ -48,16 +57,16 @@
     </item>
     
     <item>
-      <title>按下快门：我的前10000张糟糕的摄影</title>
+      <title>按下快门：我的前 10000 张糟糕的摄影</title>
       <link>http://yufanz.xyz/blog/10000photos/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/blog/10000photos/</guid>
-      <description>从很小的时候，我就被「摄影」所吸引，常常被各类杂志、博客和社交媒体上的摄影作品所折服。但在上大学之前，我都未曾拥有过一台真正意义上的相机，更多的时间是用我的iPhone进行拍摄。2020疫情刚爆发时，被困在学校的我为了一个Media&amp;amp;Arts课程的期末作业，购置了一台Sony A6100，开始习惯于通过按下快门记录生活。
+      <description>从很小的时候，我就被「摄影」所吸引，常常被各类杂志、博客和社交媒体上的摄影作品所折服。但在上大学之前，我都未曾拥有过一台真正意义上的相机，更多的时间是用我的 iPhone 进行拍摄。2020 疫情刚爆发时，被困在学校的我为了一个 Media&amp;amp;Arts 课程的期末作业，购置了一台 Sony A6100，开始习惯于通过按下快门记录生活。
 在我眼里，「摄影」迷人的地方在于，有时候生活中的某个稍瞬即逝的场景，或会击中我的某处美学神经，又或是勾起我对于世界的感动，于是拿出相机把它拍下来。接着，对于照片的进一步加工，其实就是把打动我的部分放大，加强，把心中的美给实体化在一幅幅照片的过程。通过照片，别人才有了与我共同欣赏美景时的感动与共鸣。
 法国人文摄影家Henri Cartier-Bresson说过这样一句话,
 Your first 10000 photographs are your worst. 你的前 10000 张照片是你最糟糕的。
-我写下这篇简短的Blog作为一个简陋的电子摄影集，来记录拿起相机的两年内用快门记录的瞬间。如果幸运的话，但愿这些照片是我最糟糕的照片。
+我写下这篇简短的 Blog 作为一个简陋的电子摄影集，来记录拿起相机的两年内用快门记录的瞬间。如果幸运的话，但愿这些照片是我最糟糕的照片。
 让我们开始吧。
 Blue: Sky and Sea 天蓝与海蓝 Weihai, China
 Jul 2020
@@ -68,15 +77,13 @@ SONY A6100 | 31mm F4 1/320
 Busy Thriving 忙于成长 Kunshan, China
 Nov 2021
 SONY A6100 | 240mm F8 1/1000
-Sunset Glow 晚霞 Jinan, China
-Jun 2020
-SONY A6100 | 50mm F1.</description>
+Sunset Glow 晚霞 Jinan, China</description>
     </item>
     
     <item>
       <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
       <link>http://yufanz.xyz/project/alphafold/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/alphafold/</guid>
       <description>Utilize the output of AlphaFold as the enzyme feature to predict catalytic efficiency with GNN</description>

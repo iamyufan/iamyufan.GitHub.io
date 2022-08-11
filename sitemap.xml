@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://yufanz.xyz/project/bns/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://yufanz.xyz/blog/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,6 +12,21 @@
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yufanz.xyz/categories/photography/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yufanz.xyz/tags/plotly/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yufanz.xyz/project/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yufanz.xyz/tags/python/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yufanz.xyz/categories/research/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://yufanz.xyz/tags/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yufanz.xyz/</loc>
@@ -26,19 +44,7 @@
     <loc>http://yufanz.xyz/project/mfnet/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/tags/plotly/</loc>
-    <lastmod>2022-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/project/</loc>
-    <lastmod>2022-07-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://yufanz.xyz/tags/pytorch/</loc>
-    <lastmod>2022-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/categories/research/</loc>
-    <lastmod>2022-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yufanz.xyz/tags/visualization/</loc>
@@ -54,13 +60,13 @@
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yufanz.xyz/tags/bio/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yufanz.xyz/tags/gnn/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yufanz.xyz/project/alphafold/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://yufanz.xyz/tags/blockchain/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>

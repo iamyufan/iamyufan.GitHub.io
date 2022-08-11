@@ -19,7 +19,7 @@
     <item>
       <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
       <link>http://yufanz.xyz/project/alphafold/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/alphafold/</guid>
       <description>Utilize the output of AlphaFold as the enzyme feature to predict catalytic efficiency with GNN</description>

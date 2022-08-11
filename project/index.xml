@@ -6,7 +6,16 @@
     <description>Recent content in Projects on Yufan Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain Network Analysis: A Comparative Studies of Decentralized Banks</title>
+      <link>http://yufanz.xyz/project/bns/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/bns/</guid>
+      <description>Use social network analysis to investigate the decentralization of popular DeFi protocols.</description>
+    </item>
+    
     <item>
       <title>MF-Net: A Novel Stylized Multilingual Font Generation Method</title>
       <link>http://yufanz.xyz/project/mfnet/</link>
@@ -28,7 +37,7 @@
     <item>
       <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
       <link>http://yufanz.xyz/project/alphafold/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/alphafold/</guid>
       <description>Utilize the output of AlphaFold as the enzyme feature to predict catalytic efficiency with GNN</description>

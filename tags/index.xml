@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Yufan Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plotly</title>
+      <link>http://yufanz.xyz/tags/plotly/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/tags/plotly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://yufanz.xyz/tags/python/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Computer Vision</title>
       <link>http://yufanz.xyz/tags/computer-vision/</link>
@@ -22,15 +40,6 @@
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/tags/gan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plotly</title>
-      <link>http://yufanz.xyz/tags/plotly/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://yufanz.xyz/tags/plotly/</guid>
       <description></description>
     </item>
     
@@ -64,7 +73,7 @@
     <item>
       <title>Bio</title>
       <link>http://yufanz.xyz/tags/bio/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/tags/bio/</guid>
       <description></description>
@@ -73,7 +82,7 @@
     <item>
       <title>GNN</title>
       <link>http://yufanz.xyz/tags/gnn/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/tags/gnn/</guid>
       <description></description>

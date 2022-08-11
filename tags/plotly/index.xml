@@ -6,7 +6,16 @@
     <description>Recent content in Plotly on Yufan Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/plotly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/plotly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain Network Analysis: A Comparative Studies of Decentralized Banks</title>
+      <link>http://yufanz.xyz/project/bns/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/bns/</guid>
+      <description>Use social network analysis to investigate the decentralization of popular DeFi protocols.</description>
+    </item>
+    
     <item>
       <title>Visualizing NFT Ethics: A Case Study on CryptoPunks</title>
       <link>http://yufanz.xyz/project/nftvis/</link>
