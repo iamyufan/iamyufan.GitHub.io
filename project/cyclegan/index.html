@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>CycleGAN-based System for Domain Transfer between MNIST and SVHN | Yufan Zhang</title>
+<meta name="keywords" content="GAN, PyTorch">
+<meta name="description" content="Re-implement CycleGAN to achieve domain transfer between MNIST and SVHN datasets">
+<meta name="author" content="">
+<link rel="canonical" href="http://yufanz.xyz/project/cyclegan/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cee123af3516845d648fbab4a93f35b97969fffe5186da9e571510266e91c413.css" integrity="sha256-zuEjrzUWhF1kj7q0qT81uXlp//5RhtqeVxUQJm6RxBM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://yufanz.xyz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://yufanz.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://yufanz.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://yufanz.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="http://yufanz.xyz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="CycleGAN-based System for Domain Transfer between MNIST and SVHN" />
+<meta property="og:description" content="Re-implement CycleGAN to achieve domain transfer between MNIST and SVHN datasets" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://yufanz.xyz/project/cyclegan/" />
+<meta property="og:image" content="http://yufanz.xyz/project/images/R-CycleGAN.jpg" /><meta property="article:section" content="project" />
+<meta property="article:published_time" content="2021-08-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-01T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://yufanz.xyz/project/images/R-CycleGAN.jpg" />
+<meta name="twitter:title" content="CycleGAN-based System for Domain Transfer between MNIST and SVHN"/>
+<meta name="twitter:description" content="Re-implement CycleGAN to achieve domain transfer between MNIST and SVHN datasets"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projects",
+      "item": "http://yufanz.xyz/project/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "CycleGAN-based System for Domain Transfer between MNIST and SVHN",
+      "item": "http://yufanz.xyz/project/cyclegan/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "CycleGAN-based System for Domain Transfer between MNIST and SVHN",
+  "name": "CycleGAN-based System for Domain Transfer between MNIST and SVHN",
+  "description": "Re-implement CycleGAN to achieve domain transfer between MNIST and SVHN datasets",
+  "keywords": [
+    "GAN", "PyTorch"
+  ],
+  "articleBody": " Supervisors: Prof. Shuhui Wang\nHao He, Yufan Zhang, Zefeng Bao, Yuanxi Zheng, Shuxin Guo\n尝试利用循环生成对抗网络(CycleGAN)实现 MNIST 和 SVHN 数据集之间的域转移。\n循环生成对抗网络是一种无监督生成对抗网络，它的主要想法是训练两对生成器-判别器模型以将图像从一个领域转换为另一个领域，在这过程中我们要求循环一致性。即 在序列地应用生成器后，我们应该得到一个相似于原始 L1 损失的图像。因此我们需要一 个循环损失函数(cyclic loss)，它能确保生成器不会将一个领域的图像转换到另一个和原始图像完全不相关的领域。\n该模型包含两个映射函数 𝐺 ∶ 𝑋 → 𝑌 和 𝐹 ∶ 𝑌 → 𝑋，以及相关的对抗式鉴别器 𝐷_X 和 𝐷_Y。𝐷_X 鼓励 𝐺 将 𝑋 翻译为 𝑌 风格的图像，反之亦然。为了进一步规范映射， 研究者引入了两个「循环协调损失函数」，确保转换后的风格在反转换后可以回到处理之前的状态，如下图所示:\n理想情况下，我们希望CycleGAN学习周期一致的变换函数 F 和 G。这意味着，在给定输入 x 的情况下，我们希望前后变换 F(G(x))= x’ 准确地输出原始输入 x。从理论上讲这应该是可能的，因为在输入 x 上应用 G 将在 Y 域中输出一个值，而在输入 y 上应用 F 将在 X 域中输出一个值。\n周期一致性减少了这些网络可以学习的映射的可能集合，并迫使 F 和 G 进行相反的转换。想象一下，学习的函数 F 通过修改猫的耳朵将猫图片转换为狗图片，而 G 通过修改猫的鼻子将猫图片转换为猫图片。尽管这些转换可以实现目标，但它们并不一致，因为它们对数据应用了不同的更改。使用周期一致性迫使 F 和 G 彼此相反。这样，通过修改猫的耳朵将猫图片转换为狗图片，通过以相反的方式将猫耳朵修改为猫图片。如果这两个函数是周期一致的，则它们也是更有意义的映射。\n仅使用GAN损失训练CycleGAN并不能保证保持循环的一致性。因此，额外的循环一致性损失被用于强制执行此属性。将该损失定义为输入值 x 与前向预测F(G（x）)以及输入值 y 与前向预测 F(G（x）) 之间的差异。差异越大，预测与原始输入的距离就越远。理想情况下，我们的网络将这种损失降到最低。\n模型实现 我们最初尝试实现CyleGAN的论文作者开源的源代码来实现斑马和普通马之间的域转换，但是我们遇到了算力不足的问题。我们平均需要大约45分钟才可能训练完一个epoch，我们并没有那么多时间来训练500个epoch并且在之后进行调参等操作。并且，我们的网络参数因此变得十分多（生成器约11M个参数，鉴别器约3M个参数）。\n因此，我们决定将数据集更换成更小的MNIST和SVHN。经过测试，我们平均花费90秒就可以训练一个epoch，网络参数也大大减小了很多（生成器约0.5M个参数，鉴别器约0.7M个参数）。我们也得到了最初的结果。\n然而我们发现了一个我们没有预想到的问题：生成图片的数字和原图不一致。\nFigure. 生成图片和原图片数字不一致\n于是，我们改变了网络的结构，改变判别器的结构，使之输出11个值（分别对应数字0-9和伪图片）而非之前的两个值（真图片，伪图片）。这样在整体的损失上我们又加上了生成图的数字和原图的数字的一致性的损失。重新训练的结果实现了我们期待的MNIST和SVHN数据集之间的域转换。\nFigure. 我们最终的结果网络结构\nFigure. 结果\n讨论 项目实现过程中的生成数字不一样的图片的小插曲是我们很感兴趣，难道consistency loss没有起到保证生成图和原图尽量一致的作用吗？于是我们又进行了几次训练，分别在有无consistency loss的两种情况下训练。\nFigure. 有 consistency loss 的结果\nFigure. 无 consistency loss 的结果\n我们发现如果没有consistency loss的情况下，只能保证生成图与原图的数字一致，在有consistency loss的情况下, 生成图与原图的数字的形状、方向也会类似。因此，我们推测consistency loss还是取到了保持生成图和原图一致性的作用，只不过是CycleGAN的生成能力太强。\n",
+  "wordCount" : "120",
+  "inLanguage": "en",
+  "image":"http://yufanz.xyz/project/images/R-CycleGAN.jpg","datePublished": "2021-08-01T00:00:00Z",
+  "dateModified": "2021-08-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://yufanz.xyz/project/cyclegan/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yufan Zhang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://yufanz.xyz/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://yufanz.xyz/" accesskey="h" title="Yufan Zhang (Alt + H)">
+                <p class="header-title">Yufan Zhang</p>
+            </a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://yufanz.xyz/project/" title="Project">
+                    <span>
+                        <p class="menu-title">Project</p>
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://yufanz.xyz/blog/" title="Blog">
+                    <span>
+                        <p class="menu-title">Blog</p>
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://yufanz.xyz/YufanZhang.pdf" title="CV">
+                    <span>
+                        <p class="menu-title">CV</p>
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://yufanz.xyz/search/" title="🔍">
+                    <span>
+                        <p class="menu-title">🔍</p>
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      CycleGAN-based System for Domain Transfer between MNIST and SVHN
+    </h1>
+    <div class="post-description">
+      Re-implement CycleGAN to achieve domain transfer between MNIST and SVHN datasets
+    </div>
+    <div class="post-meta"><span title='2021-08-01 00:00:00 +0000 UTC'>August 2021</span>
+
+</div>
+  </br>
+    <img loading="lazy" src="http://yufanz.xyz/project/images/R-CycleGAN.jpg">
+  </header>
+
+  
+  <div class="post-content"><blockquote>
+<p><strong>Supervisors</strong>: Prof. Shuhui Wang</p>
+</blockquote>
+<blockquote>
+<p>Hao He, <a href="https://yufanz.xyz">Yufan Zhang</a>, Zefeng Bao, Yuanxi Zheng, Shuxin Guo</p>
+</blockquote>
+<hr>
+<p>尝试利用循环生成对抗网络(CycleGAN)实现 MNIST 和 SVHN 数据集之间的域转移。</p>
+<p>循环生成对抗网络是一种无监督生成对抗网络，它的主要想法是训练两对生成器-判别器模型以将图像从一个领域转换为另一个领域，在这过程中我们要求循环一致性。即 在序列地应用生成器后，我们应该得到一个相似于原始 L1 损失的图像。因此我们需要一 个循环损失函数(cyclic loss)，它能确保生成器不会将一个领域的图像转换到另一个和原始图像完全不相关的领域。</p>
+<p>该模型包含两个映射函数 𝐺 ∶ 𝑋 → 𝑌 和 𝐹 ∶ 𝑌 → 𝑋，以及相关的对抗式鉴别器 𝐷_X 和 𝐷_Y。𝐷_X 鼓励 𝐺 将 𝑋 翻译为 𝑌 风格的图像，反之亦然。为了进一步规范映射， 研究者引入了两个「循环协调损失函数」，确保转换后的风格在反转换后可以回到处理之前的状态，如下图所示:</p>
+
+
+<img class="test" src="https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/project/images/cyclegan/Picture1.png" height="100%"/>
+
+<p>理想情况下，我们希望CycleGAN学习周期一致的变换函数 F 和 G。这意味着，在给定输入 x 的情况下，我们希望前后变换 F(G(x))= x&rsquo; 准确地输出原始输入 x。从理论上讲这应该是可能的，因为在输入 x 上应用 G 将在 Y 域中输出一个值，而在输入 y 上应用 F 将在 X 域中输出一个值。</p>
+<p>周期一致性减少了这些网络可以学习的映射的可能集合，并迫使 F 和 G 进行相反的转换。想象一下，学习的函数 F 通过修改猫的耳朵将猫图片转换为狗图片，而 G 通过修改猫的鼻子将猫图片转换为猫图片。尽管这些转换可以实现目标，但它们并不一致，因为它们对数据应用了不同的更改。使用周期一致性迫使 F 和 G 彼此相反。这样，通过修改猫的耳朵将猫图片转换为狗图片，通过以相反的方式将猫耳朵修改为猫图片。如果这两个函数是周期一致的，则它们也是更有意义的映射。</p>
+<p>仅使用GAN损失训练CycleGAN并不能保证保持循环的一致性。因此，额外的循环一致性损失被用于强制执行此属性。将该损失定义为输入值 x 与前向预测F(G（x）)以及输入值 y 与前向预测 F(G（x）)  之间的差异。差异越大，预测与原始输入的距离就越远。理想情况下，我们的网络将这种损失降到最低。</p>
+<h2 id="模型实现">模型实现<a hidden class="anchor" aria-hidden="true" href="#模型实现">#</a></h2>
+<p>我们最初尝试实现CyleGAN的论文作者开源的源代码来实现斑马和普通马之间的域转换，但是我们遇到了算力不足的问题。我们平均需要大约45分钟才可能训练完一个epoch，我们并没有那么多时间来训练500个epoch并且在之后进行调参等操作。并且，我们的网络参数因此变得十分多（生成器约11M个参数，鉴别器约3M个参数）。</p>
+<p>因此，我们决定将数据集更换成更小的MNIST和SVHN。经过测试，我们平均花费90秒就可以训练一个epoch，网络参数也大大减小了很多（生成器约0.5M个参数，鉴别器约0.7M个参数）。我们也得到了最初的结果。</p>
+<p>然而我们发现了一个我们没有预想到的问题：生成图片的数字和原图不一致。</p>
+
+
+<img class="test" src="https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/project/images/cyclegan/Picture2.png" height="100%"/>
+
+<p><em>Figure. 生成图片和原图片数字不一致</em></p>
+<p>于是，我们改变了网络的结构，改变判别器的结构，使之输出11个值（分别对应数字0-9和伪图片）而非之前的两个值（真图片，伪图片）。这样在整体的损失上我们又加上了生成图的数字和原图的数字的一致性的损失。重新训练的结果实现了我们期待的MNIST和SVHN数据集之间的域转换。</p>
+
+
+<img class="test" src="https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/project/images/cyclegan/Picture3.png" height="100%"/>
+
+<p><em>Figure. 我们最终的结果网络结构</em></p>
+
+
+<img class="test" src="https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/project/images/cyclegan/Picture4.png" height="100%"/>
+
+<p><em>Figure. 结果</em></p>
+<h2 id="讨论">讨论<a hidden class="anchor" aria-hidden="true" href="#讨论">#</a></h2>
+<p>项目实现过程中的生成数字不一样的图片的小插曲是我们很感兴趣，难道consistency loss没有起到保证生成图和原图尽量一致的作用吗？于是我们又进行了几次训练，分别在有无consistency loss的两种情况下训练。</p>
+
+
+<img class="test" src="https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/project/images/cyclegan/Picture5.png" height="100%"/>
+
+<p><em>Figure. 有 consistency loss 的结果</em></p>
+
+
+<img class="test" src="https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/project/images/cyclegan/Picture6.png" height="100%"/>
+
+<p><em>Figure. 无 consistency loss 的结果</em></p>
+<p>我们发现如果没有consistency loss的情况下，只能保证生成图与原图的数字一致，在有consistency loss的情况下, 生成图与原图的数字的形状、方向也会类似。因此，我们推测consistency loss还是取到了保持生成图和原图一致性的作用，只不过是CycleGAN的生成能力太强。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://yufanz.xyz/tags/gan/">GAN</a></li>
+      <li><a href="http://yufanz.xyz/tags/pytorch/">PyTorch</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="http://yufanz.xyz/">Yufan Zhang</a></span>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

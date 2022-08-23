@@ -25,5 +25,14 @@
       <description>Utilize the output of AlphaFold as the enzyme feature to predict catalytic efficiency with GNN</description>
     </item>
     
+    <item>
+      <title>CycleGAN-based System for Domain Transfer between MNIST and SVHN</title>
+      <link>http://yufanz.xyz/project/cyclegan/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/cyclegan/</guid>
+      <description>Re-implement CycleGAN to achieve domain transfer between MNIST and SVHN datasets</description>
+    </item>
+    
   </channel>
 </rss>

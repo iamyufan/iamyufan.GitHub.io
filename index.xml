@@ -102,6 +102,15 @@ Introduction In the article NFT Marketplace: Introduction to NFT and NFT Marketp
     </item>
     
     <item>
+      <title>CycleGAN-based System for Domain Transfer between MNIST and SVHN</title>
+      <link>http://yufanz.xyz/project/cyclegan/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/cyclegan/</guid>
+      <description>Re-implement CycleGAN to achieve domain transfer between MNIST and SVHN datasets</description>
+    </item>
+    
+    <item>
       <title>Evaluating Higher Education Using Machine Learning</title>
       <link>http://yufanz.xyz/project/higheredu/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
