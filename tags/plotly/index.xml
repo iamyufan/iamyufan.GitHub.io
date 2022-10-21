@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Plotly on Yufan Zhang</title>
-    <link>http://yufanz.xyz/tags/plotly/</link>
-    <description>Recent content in Plotly on Yufan Zhang</description>
+    <title>Plotly on YufanZ</title>
+    <link>http://example.org/tags/plotly/</link>
+    <description>Recent content in Plotly on YufanZ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/tags/plotly/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Blockchain Network Analysis: A Comparative Studies of Decentralized Banks</title>
-      <link>http://yufanz.xyz/project/bns/</link>
-      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://yufanz.xyz/project/bns/</guid>
-      <description>Use social network analysis to investigate the decentralization of popular DeFi protocols.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/plotly/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing NFT Ethics: A Case Study on CryptoPunks</title>
-      <link>http://yufanz.xyz/project/nftvis/</link>
+      <link>http://example.org/project/nftvis/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://yufanz.xyz/project/nftvis/</guid>
+      <guid>http://example.org/project/nftvis/</guid>
       <description>Investigate CryptoPunks, the most famous collection in the NFT market, to explore and visualize its potential ethical issues.</description>
     </item>
     

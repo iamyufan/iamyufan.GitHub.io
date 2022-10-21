@@ -2,96 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://yufanz.xyz/project/bns/</loc>
+    <loc>http://example.org/project/bns/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/blog/</loc>
+    <loc>http://example.org/blog/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/categories/</loc>
+    <loc>http://example.org/project/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/categories/photography/</loc>
+    <loc>http://example.org/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/tags/plotly/</loc>
+    <loc>http://example.org/blog/gre/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/project/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/python/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/categories/research/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/blog/gre/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/computer-vision/</loc>
+    <loc>http://example.org/categories/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/tags/gan/</loc>
+    <loc>http://example.org/project/mfnet/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/project/mfnet/</loc>
+    <loc>http://example.org/tags/plotly/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/tags/pytorch/</loc>
+    <loc>http://example.org/categories/research/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/tags/visualization/</loc>
+    <loc>http://example.org/tags/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/project/nftvis/</loc>
+    <loc>http://example.org/tags/visualization/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/tags/photography/</loc>
+    <loc>http://example.org/project/nftvis/</loc>
+    <lastmod>2022-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/blog/10000photos/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/blog/10000photos/</loc>
-    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/bio/</loc>
+    <loc>http://example.org/project/alphafold/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://yufanz.xyz/tags/gnn/</loc>
-    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/project/alphafold/</loc>
-    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/blockchain/</loc>
-    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/categories/innovate/</loc>
-    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/project/nftartist/</loc>
-    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/project/cyclegan/</loc>
-    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/project/higheredu/</loc>
-    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/machine-learning/</loc>
-    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/matlab/</loc>
-    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/tags/modeling/</loc>
-    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://yufanz.xyz/search/</loc>
+    <loc>http://example.org/search/</loc>
   </url>
 </urlset>
