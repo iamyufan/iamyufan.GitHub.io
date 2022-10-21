@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on YufanZ</title>
-    <link>http://example.org/project/</link>
+    <link>http://yufanz.xyz/project/</link>
     <description>Recent content in Projects on YufanZ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blockchain Network Analysis: A Comparative Studies of Decentralized Banks</title>
-      <link>http://example.org/project/bns/</link>
+      <link>http://yufanz.xyz/project/bns/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project/bns/</guid>
+      <guid>http://yufanz.xyz/project/bns/</guid>
       <description>Authors: Zichao Chen, Yulin Liu, Yufan Zhang, Luyao Zhang
 GitHub</description>
     </item>
     
     <item>
       <title>MF-Net: A Novel Stylized Multilingual Font Generation Method</title>
-      <link>http://example.org/project/mfnet/</link>
+      <link>http://yufanz.xyz/project/mfnet/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project/mfnet/</guid>
+      <guid>http://yufanz.xyz/project/mfnet/</guid>
       <description>Authors: Yufan Zhang, Junkai Man, Peng Sun
 Accepted by ACM Multimedia 2022
 GitHub
@@ -31,19 +31,19 @@ Abstract Creating a complete stylized font library that helps the audience to pe
     
     <item>
       <title>Visualizing NFT Ethics: A Case Study on CryptoPunks</title>
-      <link>http://example.org/project/nftvis/</link>
+      <link>http://yufanz.xyz/project/nftvis/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project/nftvis/</guid>
+      <guid>http://yufanz.xyz/project/nftvis/</guid>
       <description>Investigate CryptoPunks, the most famous collection in the NFT market, to explore and visualize its potential ethical issues.</description>
     </item>
     
     <item>
       <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
-      <link>http://example.org/project/alphafold/</link>
+      <link>http://yufanz.xyz/project/alphafold/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project/alphafold/</guid>
+      <guid>http://yufanz.xyz/project/alphafold/</guid>
       <description> Supervisors: Dr. Gaoyang Li, Prof. Huansheng Cao
 Yufan Zhang, Yiyang Sun, Yang Yu, Jinxuan Zhang, Zixu Geng
 GitHub

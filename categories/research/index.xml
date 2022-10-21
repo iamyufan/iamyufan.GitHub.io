@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Research on YufanZ</title>
-    <link>http://example.org/categories/research/</link>
+    <link>http://yufanz.xyz/categories/research/</link>
     <description>Recent content in Research on YufanZ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/categories/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing NFT Ethics: A Case Study on CryptoPunks</title>
-      <link>http://example.org/project/nftvis/</link>
+      <link>http://yufanz.xyz/project/nftvis/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project/nftvis/</guid>
+      <guid>http://yufanz.xyz/project/nftvis/</guid>
       <description>Investigate CryptoPunks, the most famous collection in the NFT market, to explore and visualize its potential ethical issues.</description>
     </item>
     
