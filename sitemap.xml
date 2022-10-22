@@ -44,6 +44,9 @@
     <loc>http://yufanz.xyz/project/alphafold/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://yufanz.xyz/cv/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>http://yufanz.xyz/search/</loc>
   </url>
 </urlset>

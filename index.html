@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://yufanz.xyz/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9bb2daf36aec79a784e0c9aab51e09c0f86418438442754d7bb6b3d90f247abe.css" integrity="sha256-m7La82rseaeE4MmqtR4JwPhkGEOEQnVNe7az2Q8ker4=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.df3e0a3ef28938d1a8dfd1b4ee5398856a3c794f9b3afe37a802ef12e2b65b2c.css" integrity="sha256-3z4KPvKJONGo39G07lOYhWo8eU&#43;bOv43qALvEuK2Wyw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://yufanz.xyz/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://yufanz.xyz/favicon-32x32.png">
@@ -20,6 +20,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="http://yufanz.xyz/index.xml">
+<link rel="alternate" type="application/json" href="http://yufanz.xyz/index.json">
 <noscript>
     <style>
         #theme-toggle,
@@ -79,6 +80,13 @@
                 </a>
             </li>
             <li>
+                <a href="http://yufanz.xyz/cv/" title="CV">
+                    <span>
+                        <p class="menu-title">CV</p>
+                        </span>
+                </a>
+            </li>
+            <li>
                 <a href="http://yufanz.xyz/search/" title="🔍">
                     <span>
                         <p class="menu-title">🔍</p>
@@ -96,12 +104,14 @@
             <div class="title-title">
                 <h1>
                     Hi! 👋 </br>
-                    I’m <span class="title-name">Yufan Zhang</span>.
+                    I’m <span class="title-name">Yufan Zhang</span>
                 </h1>
                 <div class="position">
-                    Data Science Undergrad <b>@ Duke Kunshan University</b>
+                    Data Science | 
+                    <a class="title-name" href="https://www.dukekunshan.edu.cn/" target="_blank" style="color: rgb(108, 108, 108);">Duke Kunshan University</a>
                     </br>
-                    Chair of Creativity and Innovation <b>@ SciEcon CIC</b>
+                    Chair of Creativity and Innovation | 
+                    <a class="title-name" href="https://www.sciecon.org/" target="_blank" style="color: rgb(108, 108, 108);">SciEcon CIC</a>
                 </div><div class="social-icons">
     <a href="https://github.com/iamyufan" target="_blank" rel="noopener noreferrer me" title="Github">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -128,14 +138,14 @@
     </a>
 </div>
 <div class="box-wrap">
-                    <button class="box">
-                        <a href="yufanz.pdf" target="_blank">Resume</a>
+                    <button class="box" onclick="location.href='/project/'" type="button">
+                        Projects
                     </button>
-                    <button class="box">
-                        <a href="/project/">Projects</a>
+                    <button class="box" onclick="location.href='/blog/'" type="button">
+                        Blogs
                     </button>
-                    <button class="box">
-                        <a href="/blog/">Blogs</a>
+                    <button class="box" onclick="location.href='/cv/'" type="button">
+                        CV
                     </button>
                 </div>
             </div>
