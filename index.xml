@@ -6,11 +6,22 @@
     <description>Recent content on YufanZ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://yufanz.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 刷题笔记</title>
+      <link>http://yufanz.xyz/blog/leetcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/blog/leetcode/</guid>
+      <description>I am preparing to be ready for an internship/full-time job at a tech company. 👨🏻‍💻
+Please take a look at how well I am approaching it 👀
+Notion</description>
+    </item>
+    
     <item>
       <title>Blockchain Network Analysis: A Comparative Studies of Decentralized Banks</title>
       <link>http://yufanz.xyz/project/bns/</link>
-      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/bns/</guid>
       <description>Authors: Zichao Chen, Yulin Liu, Yufan Zhang, Luyao Zhang
@@ -20,7 +31,7 @@ GitHub</description>
     <item>
       <title>备考二十天 不保证靠谱的 GRE 分手指南</title>
       <link>http://yufanz.xyz/blog/gre/</link>
-      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/blog/gre/</guid>
       <description>备考背景 需要说明的是，本人是一名昆山杜克大学（Top2 中外合作大学）的准大四学生，由于平常上课、写作业、看文献都是英语，所以相对来说，我并不是一一个纯英语学术小白的身份约考 GRE，有一定的英语学术文献阅读、写作的能力。
@@ -42,7 +53,7 @@ GitHub</description>
     <item>
       <title>MF-Net: A Novel Stylized Multilingual Font Generation Method</title>
       <link>http://yufanz.xyz/project/mfnet/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/mfnet/</guid>
       <description>Authors: Yufan Zhang, Junkai Man, Peng Sun
@@ -54,10 +65,23 @@ Abstract Creating a complete stylized font library that helps the audience to pe
     <item>
       <title>Visualizing NFT Ethics: A Case Study on CryptoPunks</title>
       <link>http://yufanz.xyz/project/nftvis/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/nftvis/</guid>
       <description>Investigate CryptoPunks, the most famous collection in the NFT market, to explore and visualize its potential ethical issues.</description>
+    </item>
+    
+    <item>
+      <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
+      <link>http://yufanz.xyz/project/alphafold/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://yufanz.xyz/project/alphafold/</guid>
+      <description> Supervisors: Dr. Gaoyang Li, Prof. Huansheng Cao
+Yufan Zhang, Yiyang Sun, Yang Yu, Jinxuan Zhang, Zixu Geng
+GitHub
+Using AlphaFold and GNN to Predict Catalytic Efficiency of Enzymes
+Network Scratch </description>
     </item>
     
     <item>
@@ -82,19 +106,6 @@ Busy Thriving 忙于成长 Kunshan, China
 Nov 2021
 SONY A6100 | 240mm F8 1/1000
 Sunset Glow 晚霞 Jinan, China</description>
-    </item>
-    
-    <item>
-      <title>Using AlphaFold and GNN to Predict Catalytic Efficiency</title>
-      <link>http://yufanz.xyz/project/alphafold/</link>
-      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://yufanz.xyz/project/alphafold/</guid>
-      <description> Supervisors: Dr. Gaoyang Li, Prof. Huansheng Cao
-Yufan Zhang, Yiyang Sun, Yang Yu, Jinxuan Zhang, Zixu Geng
-GitHub
-Using AlphaFold and GNN to Predict Catalytic Efficiency of Enzymes
-Network Scratch </description>
     </item>
     
     <item>
