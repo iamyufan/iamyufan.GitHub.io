@@ -8,15 +8,16 @@
 <title>MF-Net: A Novel Stylized Multilingual Font Generation Method | YufanZ</title>
 <meta name="keywords" content="">
 <meta name="description" content="Authors: Yufan Zhang, Junkai Man, Peng Sun
-Accepted by ACM Multimedia 2022
-GitHub
+Poster presented at ACM Multimedia 2022
+DOI: 10.1145/3503161.3548414
+GitHub | MFont.net (coming soon in next year)
 Abstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years.">
 <meta name="author" content="">
 <link rel="canonical" href="http://yufanz.xyz/project/mfnet/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.66e8c0542c75d62a498688c32407839400d63bea705f8d53602c6bc6d91fbefc.css" integrity="sha256-ZujAVCx11ipJhojDJAeDlADWO&#43;pwX41TYCxrxtkfvvw=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.16ab2857216df50addea44583bc81213010a788665d49cf9d038b4092497c7e9.css" integrity="sha256-FqsoVyFt9Qrd6kRYO8gSEwEKeIZl1Jz50Di0CSSXx&#43;k=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/favicon.ico">
+<link rel="icon" href="http://yufanz.xyz/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://yufanz.xyz/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://yufanz.xyz/favicon-32x32.png">
 <link rel="apple-touch-icon" href="http://yufanz.xyz/apple-touch-icon.png">
@@ -33,21 +34,23 @@ Abstract Creating a complete stylized font library that helps the audience to pe
     </style>
 </noscript><meta property="og:title" content="MF-Net: A Novel Stylized Multilingual Font Generation Method" />
 <meta property="og:description" content="Authors: Yufan Zhang, Junkai Man, Peng Sun
-Accepted by ACM Multimedia 2022
-GitHub
+Poster presented at ACM Multimedia 2022
+DOI: 10.1145/3503161.3548414
+GitHub | MFont.net (coming soon in next year)
 Abstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://yufanz.xyz/project/mfnet/" />
 <meta property="og:image" content="http://yufanz.xyz/project/images/mfnet.jpg" /><meta property="article:section" content="project" />
-<meta property="article:published_time" content="2022-07-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-07-30T00:00:00+00:00" />
+<meta property="article:published_time" content="2022-10-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-10T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://yufanz.xyz/project/images/mfnet.jpg" />
 <meta name="twitter:title" content="MF-Net: A Novel Stylized Multilingual Font Generation Method"/>
 <meta name="twitter:description" content="Authors: Yufan Zhang, Junkai Man, Peng Sun
-Accepted by ACM Multimedia 2022
-GitHub
+Poster presented at ACM Multimedia 2022
+DOI: 10.1145/3503161.3548414
+GitHub | MFont.net (coming soon in next year)
 Abstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years."/>
 
 
@@ -77,15 +80,15 @@ Abstract Creating a complete stylized font library that helps the audience to pe
   "@type": "BlogPosting",
   "headline": "MF-Net: A Novel Stylized Multilingual Font Generation Method",
   "name": "MF-Net: A Novel Stylized Multilingual Font Generation Method",
-  "description": "Authors: Yufan Zhang, Junkai Man, Peng Sun\nAccepted by ACM Multimedia 2022\nGitHub\nAbstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years.",
+  "description": "Authors: Yufan Zhang, Junkai Man, Peng Sun\nPoster presented at ACM Multimedia 2022\nDOI: 10.1145/3503161.3548414\nGitHub | MFont.net (coming soon in next year)\nAbstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years.",
   "keywords": [
     
   ],
-  "articleBody": " Authors: Yufan Zhang, Junkai Man, Peng Sun\nAccepted by ACM Multimedia 2022\nGitHub\nAbstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years. This paper revisits the state-of-the-art methods for stylized font generation and presents a taxonomy of the deep learning-based stylized font generation. Despite the notable performance of the existing models, stylized multilingual font generation, the task of applying specific font style to diverse characters in multiple languages has never been reported to be addressed. An efficient and economical method for stylized multilingual font generation is essential in numerous application scenarios that require communication with international audiences. We propose a solution for few-shot multilingual stylized font generation by a fast feed-forward network, Multilingual Font Generation Network (MF-Net), which can transfer previously unseen font styles from a few samples to characters from previously unseen languages. Following the Generative Adversarial Network (GAN) framework, MF-Net adopts two separate encoders in the generator to decouple a font image’s content and style information. We adopt an attention module in the style encoder to extract both shallow and deep style features. Moreover, we also design a novel language complexity-aware skip connection to adaptive adjust the structural information to be preserved. With an effective loss function to improve the visual quality of the generated font images, we show the effectiveness of the proposed MF-Net based on quantitative and subjective visual evaluation, and compare it with the existing models in the scenario of stylized multilingual font generation.\nNetwork Architecture Overall structure\nLanguage complexity indicator\nGallery Visual comparison of our proposed model and its competitor on seen language.\nVisual comparison of our proposed model and its competitor on unseen language.\n",
-  "wordCount" : "319",
+  "articleBody": " Authors: Yufan Zhang, Junkai Man, Peng Sun\nPoster presented at ACM Multimedia 2022\nDOI: 10.1145/3503161.3548414\nGitHub | MFont.net (coming soon in next year)\nAbstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years. This paper revisits the state-of-the-art methods for stylized font generation and presents a taxonomy of the deep learning-based stylized font generation. Despite the notable performance of the existing models, stylized multilingual font generation, the task of applying specific font style to diverse characters in multiple languages has never been reported to be addressed. An efficient and economical method for stylized multilingual font generation is essential in numerous application scenarios that require communication with international audiences. We propose a solution for few-shot multilingual stylized font generation by a fast feed-forward network, Multilingual Font Generation Network (MF-Net), which can transfer previously unseen font styles from a few samples to characters from previously unseen languages. Following the Generative Adversarial Network (GAN) framework, MF-Net adopts two separate encoders in the generator to decouple a font image’s content and style information. We adopt an attention module in the style encoder to extract both shallow and deep style features. Moreover, we also design a novel language complexity-aware skip connection to adaptive adjust the structural information to be preserved. With an effective loss function to improve the visual quality of the generated font images, we show the effectiveness of the proposed MF-Net based on quantitative and subjective visual evaluation, and compare it with the existing models in the scenario of stylized multilingual font generation.\nNetwork Architecture Overall structure\nLanguage complexity indicator\nGallery Visual comparison of our proposed model and its competitor on seen language.\nVisual comparison of our proposed model and its competitor on unseen language.\nCite the paper\nYufan Zhang, Junkai Man, and Peng Sun. 2022. MF-Net: A Novel Few-shot Stylized Multilingual Font Generation Method. In Proceedings of the 30th ACM International Conference on Multimedia (MM ‘22). Association for Computing Machinery, New York, NY, USA, 2088–2096. https://doi.org/10.1145/3503161.3548414\n",
+  "wordCount" : "371",
   "inLanguage": "en",
-  "image":"http://yufanz.xyz/project/images/mfnet.jpg","datePublished": "2022-07-30T00:00:00Z",
-  "dateModified": "2022-07-30T00:00:00Z",
+  "image":"http://yufanz.xyz/project/images/mfnet.jpg","datePublished": "2022-10-10T00:00:00Z",
+  "dateModified": "2022-10-10T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "http://yufanz.xyz/project/mfnet/"
@@ -95,7 +98,7 @@ Abstract Creating a complete stylized font library that helps the audience to pe
     "name": "YufanZ",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://raw.githubusercontent.com/iamyufan/iambrucez.GitHub.io/main/favicon.ico"
+      "url": "http://yufanz.xyz/favicon.ico"
     }
   }
 }
@@ -153,7 +156,7 @@ Abstract Creating a complete stylized font library that helps the audience to pe
     <h1 class="post-title">
       MF-Net: A Novel Stylized Multilingual Font Generation Method
     </h1>
-    <div class="post-meta"><span title='2022-07-30 00:00:00 +0000 UTC'>July 30, 2022</span>
+    <div class="post-meta"><span title='2022-10-10 00:00:00 +0000 UTC'>October 10, 2022</span>
 
 </div>
   </header>
@@ -163,9 +166,10 @@ Abstract Creating a complete stylized font library that helps the audience to pe
 <p><strong>Authors</strong>: <a href="https://yufanz.xyz">Yufan Zhang</a>, <a href="https://junkaiman.com">Junkai Man</a>, <a href="https://scholars.duke.edu/person/Peng.Sun1">Peng Sun</a></p>
 </blockquote>
 <blockquote>
-<p>Accepted by <a href="https://2022.acmmm.org/">ACM Multimedia 2022</a></p>
+<p>Poster presented at <a href="https://2022.acmmm.org/">ACM Multimedia 2022</a></p>
+<p>DOI: <a href="https://doi.org/10.1145/3503161.3548414">10.1145/3503161.3548414</a></p>
 </blockquote>
-<p><a href="https://github.com/iamyufan/MF-Net">GitHub</a></p>
+<p><a href="https://github.com/iamyufan/MF-Net">GitHub</a> | <a href="https://mfont.net/">MFont.net (coming soon in next year)</a></p>
 <hr>
 <h2 id="abstract">Abstract<a hidden class="anchor" aria-hidden="true" href="#abstract">#</a></h2>
 <p>Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years. This paper revisits the state-of-the-art methods for stylized font generation and presents a taxonomy of the deep learning-based stylized font generation. Despite the notable performance of the existing models, stylized multilingual font generation, the task of applying specific font style to diverse characters in multiple languages has never been reported to be addressed. An efficient and economical method for stylized multilingual font generation is essential in numerous application scenarios that require communication with international audiences. We propose a solution for few-shot multilingual stylized font generation by a fast feed-forward network, <strong>M</strong>ultilingual <strong>F</strong>ont Generation <strong>Net</strong>work (<strong>MF-Net</strong>), which can transfer previously unseen font styles from a few samples to characters from previously unseen languages. Following the Generative Adversarial Network (GAN) framework, MF-Net adopts two separate encoders in the generator to decouple a font image&rsquo;s content and style information. We adopt an attention module in the style encoder to extract both shallow and deep style features. Moreover, we also design a novel language complexity-aware skip connection to adaptive adjust the structural information to be preserved. With an effective loss function to improve the visual quality of the generated font images, we show the effectiveness of the proposed MF-Net based on quantitative and subjective visual evaluation, and compare it with the existing models in the scenario of stylized multilingual font generation.</p>
@@ -187,6 +191,10 @@ Abstract Creating a complete stylized font library that helps the audience to pe
 
 <img src="https://raw.githubusercontent.com/iamyufan/MF-Net/main/img/5_unseen_lan_vis.png" width="100%"/>
 
+<p><strong>Cite the paper</strong></p>
+<blockquote>
+<p>Yufan Zhang, Junkai Man, and Peng Sun. 2022. MF-Net: A Novel Few-shot Stylized Multilingual Font Generation Method. In Proceedings of the 30th ACM International Conference on Multimedia (MM &lsquo;22). Association for Computing Machinery, New York, NY, USA, 2088–2096. <a href="https://doi.org/10.1145/3503161.3548414">https://doi.org/10.1145/3503161.3548414</a></p>
+</blockquote>
 
 
   </div>
