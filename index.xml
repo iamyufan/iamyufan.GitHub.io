@@ -26,10 +26,10 @@ Abstract Decentralized finance (DeFi) is known for its unique mechanism design, 
       
       <guid>http://yufanz.xyz/project/mfnet/</guid>
       <description>Authors: Yufan Zhang, Junkai Man, Peng Sun
-Poster presented at ACM Multimedia 2022
+Paper presented at ACM Multimedia 2022
 DOI: 10.1145/3503161.3548414
 GitHub | MFont.net (coming soon in next year)
-Abstract Creating a complete stylized font library that helps the audience to perceive information from the text often requires years of study and proficiency in the use of many professional tools. Accordingly, automatic stylized font generation in a deep learning-based fashion is a desirable but challenging task that has attracted a lot of attention in recent years.</description>
+Introduction Designing fonts is never a easy task, especially for non-Latin languages such as Chinese for its complex glyph structures and large number of letters. Moreover, in real-world problems, designing a multilingual font is a even more challenging task that requires years of study, proficiency in the use of many professional tools and collaboration between multiple font designer for different languages.</description>
     </item>
     
     <item>
@@ -60,7 +60,10 @@ Abstract Creating a complete stylized font library that helps the audience to pe
       <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/nftvis/</guid>
-      <description>Investigate CryptoPunks, the most famous collection in the NFT market, to explore and visualize its potential ethical issues.</description>
+      <description>Authors: Yufan Zhang, Zichao Chen, Luyao Zhang, Xin Tong
+Accepted by ChinaVis 2022
+arXiv | GitHub
+Paper Abtract As a blockchain-based application, Non-Fungible Token (NFT) has received worldwide attention over the past few years. Digital artwork is the main form of NFT that can be stored on different blockchains. Although the NFT market is rapidly developing, we observed potential ethical and racial fairness issues in the design of NFT artworks due to a lack of ethical guidelines or censorship.</description>
     </item>
     
     <item>
@@ -69,11 +72,10 @@ Abstract Creating a complete stylized font library that helps the audience to pe
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>http://yufanz.xyz/project/alphafold/</guid>
-      <description> Supervisors: Dr. Gaoyang Li, Prof. Huansheng Cao
+      <description>Supervisors: Dr. Gaoyang Li, Prof. Huansheng Cao
 Yufan Zhang, Yiyang Sun, Yang Yu, Jinxuan Zhang, Zixu Geng
 GitHub
-Using AlphaFold and GNN to Predict Catalytic Efficiency of Enzymes
-Network Scratch </description>
+Project Introduction This project is part of the research initiative by Dr. Gaoyang Li and Prof. Huansheng Cao. The project aims to use AlphaFold and GNN to predict the catalytic efficiency of several species (e.g., Bacillus subtilis). The project is divided into two parts: the first part is to use AlphaFold to output the structural representation of the enzymes in the species, and the second part is to use GNN to harvest the previous AlphaFold output to predict the catalytic efficiency of all the catalytic processes in the species.</description>
     </item>
     
     <item>
