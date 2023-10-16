@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Yufan Zhang</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in machine learning on Yufan Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Captionize</title>
+      <link>/posts/captionize/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/captionize/</guid>
+      <description>Automatic Caption Generation for Photorealistic Images and Scientific Data Visualizations
+Proposal Motivation Captioning images is a fundamental human ability where, within moments of seeing an image, we can generate a descriptive statement. For computers, however, the ability to accurately describe images is significantly more complex yet increasingly valuable. From aiding visually impaired individuals to streamlining images posting process in digital marketing, there&amp;rsquo;s an endless array of applications. One niche yet crucial area of application is in the scientific community, where researchers grapple with the immense task of captioning myriad data visualizations and figures.</description>
+    </item>
+    
+    <item>
+      <title>miniTorch</title>
+      <link>/posts/minitorch/</link>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/minitorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MFont.net</title>
+      <link>/posts/mfnet/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mfnet/</guid>
+      <description>MF-Net: A Novel Few-shot Stylized Multilingual Font Generation Method
+Paper presented at the 30th ACM International Conference on Multimedia (MM ‘22) Authors: Yufan Zhang, Junkai Man, Peng Sun*
+Introduction Designing fonts is never a simple task, especially when it comes to non-Latin languages like Chinese, which have intricate glyph patterns and a high number of characters. Furthermore, in the real world, creating a multilingual font poses an even greater challenge, requiring years of research, expertise in using numerous professional tools, and collaboration among multiple font designers specializing in various languages.</description>
+    </item>
+    
+    <item>
+      <title>Blockchain Network Analysis</title>
+      <link>/posts/bns/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bns/</guid>
+      <description>Paper presented at SAI Computing Conference 2023
+Authors: Yufan Zhang, Zichao Chen, Yutong Sun, Yulin Liu*, and Luyao Zhang*
+Introduction Decentralized finance (DeFi) is known for its unique mechanism design, which applies smart contracts to facilitate peer-to-peer transactions. The decentralized bank is a typical DeFi application. Ideally, a decentralized bank should be decentralized in the transaction. However, many recent studies have found that decentralized banks have not achieved a significant degree of decentralization.</description>
+    </item>
+    
+  </channel>
+</rss>
