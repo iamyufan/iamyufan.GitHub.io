@@ -16,5 +16,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>software development</title>
+      <link>/tags/software-development/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/software-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blockchain</title>
+      <link>/tags/blockchain/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data engineering</title>
+      <link>/tags/data-engineering/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-engineering/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

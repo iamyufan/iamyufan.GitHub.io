@@ -13,7 +13,9 @@
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>/projects/minitorch/</guid>
-      <description>GitHub Repo: iamyufan/minitorch</description>
+      <description>&amp;ldquo;Hmm, I wonder how PyTorch works?&amp;rdquo;
+[GitHub Repo]
+miniTorch is a Python re-implementation of the Torch API designed to be simple, easy-to-read, tested, and incremental. The final library can run Torch code. It is designed for me and anyone like me who wants to learn how deep learning libraries work under the hood. It is not intended to be super fast and well-optimized, but the implementation is still considerably efficient.</description>
     </item>
     
     <item>
@@ -22,21 +24,11 @@
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>/projects/mfnet/</guid>
-      <description>MF-Net: A Novel Few-shot Stylized Multilingual Font Generation Method
-GitHub Repo: iamyufan/MF-Net
-Paper presented at the 30th ACM International Conference on Multimedia (MM ‘22) Authors: Yufan Zhang, Junkai Man, Peng Sun*
-Introduction Designing fonts is never a simple task, especially when it comes to non-Latin languages like Chinese, which have intricate glyph patterns and a high number of characters. Furthermore, in the real world, creating a multilingual font poses an even greater challenge, requiring years of research, expertise in using numerous professional tools, and collaboration among multiple font designers specializing in various languages.</description>
-    </item>
-    
-    <item>
-      <title>Blockchain Network Analysis</title>
-      <link>/projects/bns/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/bns/</guid>
-      <description>Paper presented at SAI Computing Conference 2023
-Authors: Yufan Zhang, Zichao Chen, Yutong Sun, Yulin Liu*, and Luyao Zhang*
-Introduction Decentralized finance (DeFi) is known for its unique mechanism design, which applies smart contracts to facilitate peer-to-peer transactions. The decentralized bank is a typical DeFi application. Ideally, a decentralized bank should be decentralized in the transaction. However, many recent studies have found that decentralized banks have not achieved a significant degree of decentralization.</description>
+      <description>&amp;ldquo;Can Generative AI help us design fonts?&amp;rdquo;
+[GitHub Repo] [DOI: 10.1145/3503161.3548414] [Website]
+MF-Net: A Novel Few-shot Stylized Multilingual Font Generation Method
+Paper presented at the 30th ACM International Conference on Multimedia (MM ‘22) Authors: Yufan Zhang, Junkai Man, Peng Sun* Video Presentation
+Introduction Designing fonts is never a simple task, especially when it comes to non-Latin languages like Chinese, which have intricate glyph patterns and a high number of characters.</description>
     </item>
     
   </channel>

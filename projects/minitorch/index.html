@@ -10,7 +10,7 @@
   <link rel="canonical" href="/projects/minitorch/" />
     
     
-    <link rel="stylesheet" href="/css/style.min.578080f8d6f2b72e394ab45b0b65f401ca018861011afa15d8050575df8514dc.css">
+    <link rel="stylesheet" href="/css/style.min.d06ac3243313d931068686b37d4d911484078e2e61b82fd8020c02bad7c19d7b.css">
     <link rel="stylesheet" href="/assets/css/extended.min.9729f28a5087b689b946e103d96abd63bfd37b1417effa251dbf798312e3fba5.css">
 
   
@@ -18,7 +18,7 @@
     <meta property="og:title" content="miniTorch"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="/projects/minitorch/"/>
-    <meta property="og:image" content="/images/minitorch.jpg"/>
+    
     <meta property="og:description" content="Python Re-implementation of the Torch API"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@zerostaticio"/>
@@ -64,7 +64,7 @@
   <div id="wrapper" class="wrapper">
     <div class='header'>
   <a class="header-logo" href="/">
-    <img src="/images/new.png" alt="Logo" />
+    <img src="/images/logo/gradient.png" alt="Logo" />
     
   </a>
   <div class="menu-main">
@@ -108,14 +108,208 @@
 <div class="intro">
   <h1>miniTorch<span class="dot">.</span></h1>
   
-  <img alt="minitorch" src="/images/minitorch.jpg" />
-  
 </div>
 
 <div class="content">
   <blockquote>
-<p>GitHub Repo: <a href="https://github.com/iamyufan/minitorch">iamyufan/minitorch</a></p>
+<p>&ldquo;Hmm, I wonder how PyTorch works?&rdquo;</p>
 </blockquote>
+<p><a href="https://github.com/iamyufan/minitorch">[GitHub Repo]</a></p>
+<hr>
+<p><strong>miniTorch</strong> is a Python re-implementation of the <a href="http://www.pytorch.org/">Torch</a> API designed to be simple, easy-to-read, tested, and incremental. The final library can run Torch code. It is designed for me and anyone like me who wants to learn how deep learning libraries work under the hood. It is not intended to be super fast and well-optimized, but the implementation is still considerably efficient.</p>
+<h2 id="feature-highlights">Feature Highlights</h2>
+<ul>
+<li><strong>Build models in an OOP way, just like PyTorch</strong></li>
+<li><strong>Variable wrapper around NumPy tensor</strong></li>
+<li><strong>Automatic differentiation</strong></li>
+<li><strong>JIT compilation</strong></li>
+<li><strong>GPU acceleration</strong></li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>Before diving into the implementation details, let&rsquo;s take a quick recap of the basic concepts in deep learning. In deep learning, we usually have a <strong>model</strong> defined as a certain <strong>network structure</strong> plus the <strong>parameters</strong> associated with the network. The model is trained by feeding some <strong>input data</strong>, performing some <strong>computation</strong> on the input data according to the defined network structure and the parameters, producing some <strong>output data</strong>, comparing the output data with the <strong>ground truth</strong>, and updating the model parameters to minimize the <strong>loss</strong> between the output data and the ground truth. This process is called <strong>backpropagation</strong>, which is essentially the chain rule in calculus.</p>
+<iframe style="border:none" width="100%" height="450" src="https://whimsical.com/embed/Eva4EfzEfVxmCKtPu2xwqF"></iframe>
+<p><em>Overview of Training a Deep Learning Model</em></p>
+<p>So, given the above overview, we can see that the core of a deep learning library is to provide a way to define a model, perform computation on the model, and compute the gradients of the model parameters. To follow the implementation of PyTorch, miniTorch has the following TODOs:</p>
+<ul>
+<li><strong>We need a data structure to represent the model</strong>: miniTorch implements a tree data structure <code>Module</code> that can be <code>walked</code> to find all of the parameters.</li>
+<li><strong>We need to extend the functionality of a numerical value in Python</strong>: miniTorch implements a <code>Variable</code> class that wraps a NumPy data structure and provides additional functionalities for automatic differentiation such as storing the function that produces the value.</li>
+<li><strong>We need to implement the computation graph</strong>: By connecting the variables through the functions between them, we can build a computation graph. miniTorch implements backpropagation by traversing the computation graph in reverse topological order.</li>
+<li><strong>We need to improve the efficiency</strong>: First, miniTorch implements a <code>Tensor</code> class that avoids unnecessary <code>for</code> loops. Second, miniTorch needs parallel computation for it to be fast on CPU as well as GPU.</li>
+</ul>
+<h2 id="0-module-and-parameter">0. Module and Parameter</h2>
+<p>A deep learning model is often huge in size and complex in structure. For example, there are 1.7 trillion parameters in GPT-4. Also, it is common that a large and complex model contains several repeated structures such as Transformer blocks in GPT-4. A data structure is, therefore, needed for handling deep learning models that can abstract the model structure and parameters.</p>
+<p>In software development, <strong>modular programming</strong> has been a common practice for a long time. It is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules. In deep learning, we can also apply this technique to the model design. We can define a module as a self-contained piece of a model that can be connected to other modules to form a larger model.</p>
+<p><code>Module</code> is a <strong>recursive tree data structure</strong>. Inside each <code>Module</code>, we have the parameters and other sub-modules. This design is very similar to the tree data structure. We can define a <code>Module</code> class that has a list of sub-modules and a list of parameters. We can also define a <code>Parameter</code> class that has a value and a gradient. The <code>Module</code> class can be <code>walked</code> to find all of the parameters.</p>
+<p>Let&rsquo;s take a look at an example of using <code>Module</code> and <code>Parameter</code> to define a model.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyModule</span><span class="p">(</span><span class="n">minitorch</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">parameter1</span> <span class="o">=</span> <span class="n">minitorch</span><span class="o">.</span><span class="n">Parameter</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">apple1</span> <span class="o">=</span> <span class="n">Apple</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">banana2</span> <span class="o">=</span> <span class="n">Banana</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Apple</span><span class="p">(</span><span class="n">minitorch</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">banana1</span> <span class="o">=</span> <span class="n">Banana</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">banana2</span> <span class="o">=</span> <span class="n">Banana</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sweet</span> <span class="o">=</span> <span class="n">minitorch</span><span class="o">.</span><span class="n">Parameter</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Banana</span><span class="p">(</span><span class="n">minitorch</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">yellow</span> <span class="o">=</span> <span class="n">minitorch</span><span class="o">.</span><span class="n">Parameter</span><span class="p">(</span><span class="o">-</span><span class="mi">92</span><span class="p">)</span>
+</span></span></code></pre></div><p>We can print the parameters of module <code>MyModule</code> like we are printing a tree.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;parameter1&#34;</span><span class="p">:</span> <span class="s2">&#34;15&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;apple1.sweet&#34;</span><span class="p">:</span> <span class="s2">&#34;400&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;apple1.banana1.yellow&#34;</span><span class="p">:</span> <span class="s2">&#34;-92&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;apple1.banana2.yellow&#34;</span><span class="p">:</span> <span class="s2">&#34;-92&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;banana2.yellow&#34;</span><span class="p">:</span> <span class="s2">&#34;-92&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Below is the tree structure of the module.</p>
+<p><img src="/images/posts/minitorch/module_tree.png" alt="Module Tree"></p>
+<h2 id="1-automatic-differentiation">1. Automatic Differentiation</h2>
+<p>To update the parameters (a.k.a. learn the model), we need to compute the gradients of the parameters given the computed loss and update them for <strong>gradient descent</strong>. The gradients can be computed by <strong>backpropagation</strong>, which is essentially the chain rule in calculus. The chain rule is a method for finding the derivative of composite functions. For example, given a composite function <code>f(g(x))</code>, the derivative of <code>f(g(x))</code> is <code>f'(g(x)) * g'(x)</code>. The chain rule can be applied to the computation graph of a deep learning model. The computation graph is a <strong>directed acyclic graph (DAG)</strong> where the nodes are the variables and the edges are the functions that produce the variables.</p>
+<p>But there is one gigantic problem remaining: <strong>how to compute the derivative of a function?</strong> There are several options:</p>
+<ul>
+<li>
+<p><strong>symbolic differentiation</strong>: By deriving the derivative of a function symbolically, we can compute the derivative of the function. However, it is not always easy to derive the derivative of a function symbolically.</p>
+</li>
+<li>
+<p><strong>numerical differentiation</strong>: Since the derivative of a function is the slope of the tangent line of the function, we can approximate the derivative of a function by computing the difference between two points on the function. However, it might be <strong>costly</strong> since we need to compute the function twice. Below is the code snippet of numerical differentiation.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">central_difference</span><span class="p">(</span><span class="n">f</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">*</span><span class="n">vals</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">arg</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        f : arbitrary function from n-scalar args to one value
+</span></span></span><span class="line"><span class="cl"><span class="s2">        *vals : n-float values $x_0 \ldots x_{n-1}$
+</span></span></span><span class="line"><span class="cl"><span class="s2">        arg : the number $i$ of the arg to compute the derivative
+</span></span></span><span class="line"><span class="cl"><span class="s2">        epsilon : a small constant
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        An approximation of $f&#39;_i(x_0, \ldots, x_{n-1})$
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># f(x + epsilon)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x_vals_1</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x_vals_1</span><span class="p">[</span><span class="n">arg</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_vals_1</span><span class="p">[</span><span class="n">arg</span><span class="p">]</span> <span class="o">+</span> <span class="n">epsilon</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># f(x - epsilon)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x_vals_2</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x_vals_2</span><span class="p">[</span><span class="n">arg</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_vals_2</span><span class="p">[</span><span class="n">arg</span><span class="p">]</span> <span class="o">-</span> <span class="n">epsilon</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">x_vals_1</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">x_vals_2</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">epsilon</span><span class="p">)</span>
+</span></span></code></pre></div></li>
+</ul>
+<p>In miniTorch and other DL libraries, we adopt another solution, namely <strong>automatic differentiation</strong>. The idea is to decompose a function and gather the steps about the computational paths within a function. Then, we can compute the derivative of each elementary function and apply the chain rule to compute the derivative of the composite function.</p>
+<p>For example, if we are going to calculate the derivative of the function, <code>(x * x) * y + 10.0 * x + y</code>, w.r.t. both <code>x</code> and <code>y</code>, we can decompose the function into several elementary functions and construct the computation path as follows (ignore the random numbers inside the circles):</p>
+<p><img src="/images/posts/minitorch/computation_graph.png" alt="Computation Graph"></p>
+<p>However, in order to build such a computation path, we need to trace all the internal computation of any function - which can be difficult to do because Python does not directly expose how its inputs are used in the function, i.e. given the input of a function, what we get is only the output, but not the calculation process of the input inside the function.</p>
+<p>The solution is quite beautiful:</p>
+<ul>
+<li>Build a new data structure <code>Variable</code> to replace the original numerical value in Python.</li>
+<li>Overload the operators in Python with <code>Functions</code> to make the <code>Variable</code> class behave like a numerical value.</li>
+<li>Extend the functionality of the <code>Variable</code> class to store the function that produces the value.</li>
+</ul>
+<p>One of the benefits of such a design is that for the user, the <code>Variable</code> class behaves like a numerical value, so the user can use it just like a numerical value and never need to know what is happening under the hood.</p>
+<h3 id="implementation-of-autodiff">Implementation of autodiff</h3>
+<p>To achieve what I just described above, we need to implement the code architecture shown in the flowchart below. The code can be found in these three files: <a href="https://github.com/iamyufan/minitorch/blob/module-1/minitorch/scalar.py"><code>scalar.py</code></a>, <a href="https://github.com/iamyufan/minitorch/blob/module-1/minitorch/scalar_functions.py"><code>scalar_function.py</code></a>, and <a href="https://github.com/iamyufan/minitorch/blob/module-1/minitorch/autodiff.py"><code>autodiff.py</code></a>.</p>
+<iframe style="border:none" width="100%" height="850" src="https://whimsical.com/embed/8RmHa5dkmEeZVRfoNxTa2n"></iframe>
+<p><em>Implementation of Automatic Differentiation</em></p>
+<p>The <strong><code>ScalarFunction</code></strong> class can be viewed as the <code>Functions</code> class as we described above.</p>
+<ul>
+<li>
+<p>It overloads the operators in Python and provides additional functionalities for automatic differentiation such as creating new <code>Scalar</code> objects and storing the function that produces the value.</p>
+</li>
+<li>
+<p>Inside each inherited class of <code>ScalarFunction</code>, (e.g., <code>Add</code>, <code>Mul</code>, etc.), we need to implement the <code>forward</code> and <code>backward</code> methods. The <code>forward</code> method computes the value of the function given the input <code>Scalar</code> objects. The <code>backward</code> method computes the derivative of the function w.r.t. the input <code>Scalar</code> objects.</p>
+</li>
+<li>
+<p>After computing the result(s) of the function, <code>apply</code> method also creates a new <code>Scalar</code> object and stores the function and the input scalars that produces the value in the <code>Scalar</code> object. This is the key to automatic differentiation. By storing the function that produces the value, we can trace the computation path and compute the derivative of the composite function by applying the chain rule.</p>
+</li>
+<li>
+<p>When computing the derivatives, sometimes we need to access the value from the forward pass. We can use the <code>ctx</code> object to store the value from the forward pass and access it in the backward pass.</p>
+</li>
+<li>
+<p>For example, The derivative of <code>sigmoid(x)</code> with respect to <code>x</code> is <code>sigmoid(x) * (1 - sigmoid(x))</code>. Therefore, the <code>Sigmoid</code> class can be implemented as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Sigmoid</span><span class="p">(</span><span class="n">ScalarFunction</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">  <span class="nd">@staticmethod</span>
+</span></span><span class="line"><span class="cl">  <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">sig</span> <span class="o">=</span> <span class="n">operators</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ctx</span><span class="o">.</span><span class="n">save_for_backward</span><span class="p">(</span><span class="n">sig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="n">sig</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nd">@staticmethod</span>
+</span></span><span class="line"><span class="cl">  <span class="k">def</span> <span class="nf">backward</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">,</span> <span class="n">d_output</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="n">sig</span><span class="p">,)</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">saved_values</span>
+</span></span><span class="line"><span class="cl">      <span class="n">result</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">sig</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">sig</span><span class="p">)</span> <span class="o">*</span> <span class="n">d_output</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="n">result</span>
+</span></span></code></pre></div></li>
+</ul>
+<p>The core <strong><code>Scalar</code></strong> class can be viewed as the <code>Variable</code> class as we described above. It wraps a Python <code>float</code> object and provides additional functionalities for automatic differentiation with overloaded operators.</p>
+<ul>
+<li>A <code>Scalar</code> object contains a <code>data</code> attribute that stores the value of the <code>Scalar</code> object.</li>
+<li>It also stores the <code>history</code> that contains the <code>ScalarFunction</code> that produces the current <code>Scalar</code> object.</li>
+<li>By calling the <code>chain_rule</code> method, we can compute the derivative w.r.t. the input <code>Scalar</code> object that produces this <code>Scalar</code> object.</li>
+</ul>
+<h3 id="backpropagation">Backpropagation</h3>
+<p>Now, we have a <strong>computation graph</strong> constructed by <code>Scalar</code> objects and <code>ScalarFunction</code> objects, and we can compute the <strong>derivative at each node</strong> in the computation graph by applying the chain rule. Next, we need to figure out how to <strong>backpropagate</strong> the derivative from the output node to the input node. That is, we need to find a way to <strong>traverse the computation graph</strong> in reverse order to accumulate the gradients so that we can update the parameters of the DL model (which would be the <strong>leaves</strong> of the computation graph).</p>
+<p>We could just apply these rules randomly and process each nodes as they come aggregating the resulted values. However this can be quite inefficient. It is better to wait to call <code>backward</code> until we have accumulated all the values we will need.</p>
+<p>To handle this issue, we will process the nodes in <strong>topological order</strong>. The topological ordering of a directed acyclic graph is an ordering that ensures no node is processed after its ancestor. Once we have the order defined, we process each node one at a time in order.</p>
+<p><strong>Algorithm</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">topological_sort</span><span class="p">(</span><span class="n">variable</span><span class="p">:</span> <span class="n">Variable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Variable</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Computes the topological order of the computation graph.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        variable: The right-most variable
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Non-constant Variables in topological order starting from the right.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">visited</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ordered_vars</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Variable</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="n">variable</span><span class="p">:</span> <span class="n">Variable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">variable</span><span class="o">.</span><span class="n">is_constant</span><span class="p">()</span> <span class="ow">or</span> <span class="n">variable</span><span class="o">.</span><span class="n">unique_id</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="n">variable</span><span class="o">.</span><span class="n">is_leaf</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">input_var</span> <span class="ow">in</span> <span class="n">variable</span><span class="o">.</span><span class="n">parents</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">visit</span><span class="p">(</span><span class="n">input_var</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">visited</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">variable</span><span class="o">.</span><span class="n">unique_id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ordered_vars</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">variable</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">visit</span><span class="p">(</span><span class="n">variable</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">ordered_vars</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">backpropagate</span><span class="p">(</span><span class="n">variable</span><span class="p">:</span> <span class="n">Variable</span><span class="p">,</span> <span class="n">deriv</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Runs backpropagation on the computation graph in order to
+</span></span></span><span class="line"><span class="cl"><span class="s2">    compute derivatives for the leave nodes.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        variable: The right-most variable
+</span></span></span><span class="line"><span class="cl"><span class="s2">        deriv  : Its derivative that we want to propagate backward to the leaves.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    No return. Should write to its results to the derivative values of each leaf through `accumulate_derivative`.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ordered_vars</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Variable</span><span class="p">]</span> <span class="o">=</span> <span class="n">topological_sort</span><span class="p">(</span><span class="n">variable</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Record the derivative of each variable</span>
+</span></span><span class="line"><span class="cl">    <span class="n">derivatives</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">var</span><span class="o">.</span><span class="n">unique_id</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">ordered_vars</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">derivatives</span><span class="p">[</span><span class="n">variable</span><span class="o">.</span><span class="n">unique_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">deriv</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">ordered_vars</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">var</span><span class="o">.</span><span class="n">is_leaf</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="n">var</span><span class="o">.</span><span class="n">accumulate_derivative</span><span class="p">(</span><span class="n">derivatives</span><span class="p">[</span><span class="n">var</span><span class="o">.</span><span class="n">unique_id</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">parent_var</span><span class="p">,</span> <span class="n">deriv</span> <span class="ow">in</span> <span class="n">var</span><span class="o">.</span><span class="n">chain_rule</span><span class="p">(</span><span class="n">derivatives</span><span class="p">[</span><span class="n">var</span><span class="o">.</span><span class="n">unique_id</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">parent_var</span><span class="o">.</span><span class="n">is_constant</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">parent_var</span><span class="o">.</span><span class="n">unique_id</span> <span class="ow">in</span> <span class="n">derivatives</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">derivatives</span><span class="p">[</span><span class="n">parent_var</span><span class="o">.</span><span class="n">unique_id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">deriv</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">derivatives</span><span class="p">[</span><span class="n">parent_var</span><span class="o">.</span><span class="n">unique_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">deriv</span>
+</span></span></code></pre></div><h2 id="2-a-more-efficient-variable-wrapper-tensor">2. A More Efficient Variable Wrapper: Tensor</h2>
+<h2 id="3-parallel-computation-on-cpu-and-gpu">3. Parallel Computation on CPU and GPU</h2>
 
 </div>
 

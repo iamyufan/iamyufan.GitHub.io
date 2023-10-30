@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data engineering on Yufan Zhang</title>
+    <link>/tags/data-engineering/</link>
+    <description>Recent content in data engineering on Yufan Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain Network Analysis</title>
+      <link>/projects/bns/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/bns/</guid>
+      <description>&amp;ldquo;Hmm, are decentralized banks really decentralized?&amp;rdquo;
+[GitHub Repo] [DOI: 10.1007/978-3-031-37717-4_67]
+Blockchain Network Analysis: A Comparative Study of Decentralized Banks
+Paper presented at SAI Computing Conference 2023 Authors: Yufan Zhang, Zichao Chen, Yutong Sun, Yulin Liu*, and Luyao Zhang* Introduction Decentralized finance (DeFi) is known for its unique mechanism design, which applies smart contracts to facilitate peer-to-peer transactions. The decentralized bank is a typical DeFi application. Ideally, a decentralized bank should be decentralized in the transaction.</description>
+    </item>
+    
+  </channel>
+</rss>
