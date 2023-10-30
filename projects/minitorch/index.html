@@ -169,7 +169,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Below is the tree structure of the module.</p>
 <p><img src="/images/posts/minitorch/module_tree.png" alt="Module Tree"></p>
-<h2 id="1-automatic-differentiation">1. Automatic Differentiation</h2>
+<h2 id="1-automatic-differentiation-through-a-variable-wrapper">1. Automatic Differentiation through a Variable Wrapper</h2>
 <p>To update the parameters (a.k.a. learn the model), we need to compute the gradients of the parameters given the computed loss and update them for <strong>gradient descent</strong>. The gradients can be computed by <strong>backpropagation</strong>, which is essentially the chain rule in calculus. The chain rule is a method for finding the derivative of composite functions. For example, given a composite function <code>f(g(x))</code>, the derivative of <code>f(g(x))</code> is <code>f'(g(x)) * g'(x)</code>. The chain rule can be applied to the computation graph of a deep learning model. The computation graph is a <strong>directed acyclic graph (DAG)</strong> where the nodes are the variables and the edges are the functions that produce the variables.</p>
 <p>But there is one gigantic problem remaining: <strong>how to compute the derivative of a function?</strong> There are several options:</p>
 <ul>
@@ -213,7 +213,7 @@
 <h3 id="implementation-of-autodiff">Implementation of autodiff</h3>
 <p>To achieve what I just described above, we need to implement the code architecture shown in the flowchart below. The code can be found in these three files: <a href="https://github.com/iamyufan/minitorch/blob/module-1/minitorch/scalar.py"><code>scalar.py</code></a>, <a href="https://github.com/iamyufan/minitorch/blob/module-1/minitorch/scalar_functions.py"><code>scalar_function.py</code></a>, and <a href="https://github.com/iamyufan/minitorch/blob/module-1/minitorch/autodiff.py"><code>autodiff.py</code></a>.</p>
 <iframe style="border:none" width="100%" height="850" src="https://whimsical.com/embed/8RmHa5dkmEeZVRfoNxTa2n"></iframe>
-<p><em>Implementation of Automatic Differentiation</em></p>
+<p><em>Implementation of Automatic Differentiation on Scalar</em></p>
 <p>The <strong><code>ScalarFunction</code></strong> class can be viewed as the <code>Functions</code> class as we described above.</p>
 <ul>
 <li>
@@ -309,7 +309,115 @@
 </span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                    <span class="n">derivatives</span><span class="p">[</span><span class="n">parent_var</span><span class="o">.</span><span class="n">unique_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">deriv</span>
 </span></span></code></pre></div><h2 id="2-a-more-efficient-variable-wrapper-tensor">2. A More Efficient Variable Wrapper: Tensor</h2>
+<p>We now have a fully developed autodifferentiation system built around scalars. This system is correct, but it is inefficient during training, since <strong>every scalar number requires building an object</strong>, and <strong>each operation requires storing a graph of all the values</strong> that we have previously created. Moreover, training requires repeating the above operations, and running models, such as a linear model, requires a <strong><code>for</code></strong> loop over each of the terms in the network.</p>
+<p>In miniTorch, a new variable wrapper class <code>Tensor</code> is implemented to solve these problems. Tensors group together many repeated operations to save Python overhead and to pass off grouped operations to faster implementations.</p>
+<h3 id="whats-under-the-hood-of-tensor">What&rsquo;s under the hood of Tensor?</h3>
+<p>Under the hood, a <code>Tensor</code> is a <strong>multi-dimensional array</strong> of numbers. It is a wrapper around a NumPy array. Most importantly, it separates the actual data storage from the tensor object. This allows us to <strong>share the data storage</strong> between multiple tensors. For example, we can create a tensor <code>a</code> and a tensor <code>b</code> that is a view of <code>a</code>. They share the same data storage. Then, we can perform some operations on <code>a</code> and <code>b</code> without creating new tensors. This is very useful when we are dealing with large tensors.</p>
+<p>As shown in the chart below, the <code>Tensor</code> class extends what we have built for <code>Scalar</code>.</p>
+<iframe style="border:none" width="100%" height="1250" src="https://whimsical.com/embed/SH4mczPXAqGbW7CtYJAjM2"></iframe>
+<p><em>Implementation of Tensor</em></p>
+<p>Notice what is different (marked in purple):</p>
+<ul>
+<li>We have a <code>TensorData</code> class whose <code>_storage</code> stores the actual data of the tensor. The different tensors can share the same data storage, but come with different <code>_stride</code> and <code>_shape</code>.</li>
+<li>We have a <code>TensorBackend</code> class which collects all the functions that can be applied to the tensor. The <code>TensorBackend</code> class is a <strong>strategy pattern</strong>. It allows us to <strong>switch between different implementations</strong> of the tensor functions by changing the <code>ops</code> objects. For example, we can implement the higher-ordered functions in a <code>for</code> loop manner (see <a href="https://github.com/iamyufan/minitorch/blob/module-3/minitorch/tensor_ops.py"><code>tensor_ops.py</code></a>), or with numba JIT parallel computation (see <a href="https://github.com/iamyufan/minitorch/blob/module-3/minitorch/fast_ops.py"><code>fast_ops.py</code></a>), or with CUDA GPU computation (see <a href="https://github.com/iamyufan/minitorch/blob/module-3/minitorch/cuda_ops.py"><code>cuda_ops.py</code></a>).</li>
+</ul>
+<p>Let&rsquo;s take a look at an example of calling <code>Permute</code> on a tensor and how it works in autodiff with the new <code>Tensor</code> class.  Inside the <code>Permute</code> Function, the <code>forward</code> will create a new Tensor with the same data storage but different <code>_stride</code> and <code>_shape</code>. (i.e. different <code>TensorData</code> but with the same <code>_storage</code>). The <code>backward</code> will do something similar.</p>
+<p><code>tensor_functions.py</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Permute</span><span class="p">(</span><span class="n">Function</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@staticmethod</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">order</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ori_order</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">order</span><span class="o">.</span><span class="n">_tensor</span><span class="o">.</span><span class="n">_storage</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ctx</span><span class="o">.</span><span class="n">save_for_backward</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">ori_order</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">minitorch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">_tensor</span><span class="o">.</span><span class="n">permute</span><span class="p">(</span><span class="o">*</span><span class="n">ori_order</span><span class="p">),</span> <span class="n">backend</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">backend</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@staticmethod</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">backward</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">,</span> <span class="n">grad_output</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Tensor</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">ori_order</span><span class="p">)</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">saved_tensors</span>
+</span></span><span class="line"><span class="cl">        <span class="n">order</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">ori_order</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ori_order</span><span class="p">))]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">grad_output</span> <span class="o">=</span> <span class="n">minitorch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">grad_output</span><span class="o">.</span><span class="n">_tensor</span><span class="o">.</span><span class="n">permute</span><span class="p">(</span><span class="o">*</span><span class="n">order</span><span class="p">),</span> <span class="n">backend</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">backend</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">grad_output</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span></code></pre></div><p><code>tensor.py</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">.tensor_functions</span> <span class="kn">import</span> <span class="n">Permute</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Tensor</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">permute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">order</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;Permute tensor dimensions to *order&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Permute</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tensor</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">order</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span></code></pre></div><p><code>tensor_data.py</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TensorData</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">permute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">order</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TensorData</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Permute the dimensions of the tensor.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">            order (list): a permutation of the dimensions
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">            New `TensorData` with the same storage and a new dimension order.
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">order</span><span class="p">))</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span> <span class="sa">f</span><span class="s2">&#34;Must give a position to each dimension. Shape: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> Order: </span><span class="si">{</span><span class="n">order</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># TODO: Implement for Task 2.1.</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">TensorData</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">storage</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_storage</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shape</span><span class="o">=</span><span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">order</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">strides</span><span class="o">=</span><span class="nb">tuple</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_strides</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">order</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span></code></pre></div><p>What is a little bit tricky is that unlike Scalar, we might want to deal with operations that work on tensors with different shapes. For example, we might want to add a float value <code>1.0</code> to a tensor of shape <code>(3, 2)</code>. In this case, we need to <strong>broadcast</strong> the tensors to the same shape. We have the following rules for broadcasting:</p>
+<ul>
+<li><strong>Rule 1</strong>: Dimension of size 1 can be broadcasted to any shape.</li>
+<li><strong>Rule 2</strong>: Extra dimensions of 1 can be added with <code>view</code>.</li>
+<li><strong>Rule 2</strong>: Zip automatically adds dims of size 1 on the left.</li>
+</ul>
+<p>Therefore, we can implement the <code>shape_broadcast</code> method as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">shape_broadcast</span><span class="p">(</span><span class="n">shape1</span><span class="p">:</span> <span class="n">UserShape</span><span class="p">,</span> <span class="n">shape2</span><span class="p">:</span> <span class="n">UserShape</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UserShape</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Broadcast two shapes to create a new union shape.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        shape1 : first shape
+</span></span></span><span class="line"><span class="cl"><span class="s2">        shape2 : second shape
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        broadcasted shape
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Raises:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        IndexingError : if cannot broadcast
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Rule 3: extra dimensions of 1 can be implicitly added to the left of the shape.</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">shape1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">shape2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">shape2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shape1</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">shape2</span><span class="p">))]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">shape2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">shape1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shape2</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">shape1</span><span class="p">))]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">shape1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Now, shape1 and shape2 have the same dimension.</span>
+</span></span><span class="line"><span class="cl">    <span class="n">n_shape</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shape1</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">shape1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">shape2</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># Rule 1: dimension of size 1 broadcasts with anything</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">shape1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">n_shape</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">shape2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">shape2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">n_shape</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">shape1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">raise</span> <span class="n">IndexingError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Cannot broadcast </span><span class="si">{</span><span class="n">shape1</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">shape2</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">n_shape</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">shape1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">n_shape</span><span class="p">)</span>
+</span></span></code></pre></div><p>For example, in the case of linear model, we have the data <code>X</code> of shape <code>(B * F)</code>, the weight <code>W</code> of shape <code>(F * H)</code>, and the bias <code>b</code> of shape <code>(H)</code>. To compute the output <code>Y</code> following <code>Y = X @ W + b</code>, we need to follow the following steps (suppose we don&rsquo;t have matrix multiplication implemented):</p>
+<p><img src="/images/posts/minitorch/broadcast.png" alt="Broadcasting"></p>
 <h2 id="3-parallel-computation-on-cpu-and-gpu">3. Parallel Computation on CPU and GPU</h2>
+<p>[To Be Updated]</p>
 
 </div>
 
